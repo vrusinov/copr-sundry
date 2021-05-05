@@ -1,0 +1,11 @@
+URL: https://src.fedoraproject.org/rpms/rust-exa
+Version: c9eae5e0241b4b8deb37246a4b74344380828acb
+License: MIT
+License File: LICENSE
+
+Description:
+RPM spec files for rust-exa - a modern replacement for the command-line program ls.
+
+Local Modifications:
+- Added README.google file.
+- Added LICENSE file.

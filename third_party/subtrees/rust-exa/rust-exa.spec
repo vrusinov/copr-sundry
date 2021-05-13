@@ -4,6 +4,9 @@
 %global __cargo_skip_build 0
 %global __cargo_is_lib() false
 
+# debug package builds fails
+%global debug_package %{nil}
+
 %global crate exa
 
 Name:           rust-%{crate}

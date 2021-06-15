@@ -8,4 +8,5 @@ SOURCES/*.gz
 SOURCES/*.tar.xz
 SOURCES/*.zip
 SOURCES/*.bz2
+SOURCES/*.crate
 SOURCES/README

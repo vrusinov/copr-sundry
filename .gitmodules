@@ -9,7 +9,7 @@
 	url = git://pkgs.fedoraproject.org/python-iniparse.git
 [submodule "third_party/submodules/perl-generators"]
 	path = third_party/submodules/perl-generators
-	url = git://pkgs.fedoraproject.org/perl-generators.git
+	url = https://src.fedoraproject.org/rpms/perl-generators.git
 [submodule "third_party/submodules/perl-Fedora-VSP"]
 	path = third_party/submodules/perl-Fedora-VSP
 	url = git://pkgs.fedoraproject.org/perl-Fedora-VSP.git

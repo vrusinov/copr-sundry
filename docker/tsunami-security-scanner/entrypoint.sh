@@ -17,6 +17,4 @@ fi
 java -cp tsunami.jar:plugins/* -Dtsunami-config.location=tsunami.yaml \
   com.google.tsunami.main.cli.TsunamiCli \
   ${target_args} \
-  --scan-results-local-output-format=JSON --scan-results-local-output-filename=out
-
-cat out
+  --scan-results-local-output-format=JSON --scan-results-local-output-filename=/dev/stdout

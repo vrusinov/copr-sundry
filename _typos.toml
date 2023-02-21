@@ -7,9 +7,9 @@ extend-exclude = ["third_party/submodules/*/*"]
 noo = "noo"
 # False-positives in some version strings
 # TODO: try removing
-ba = "ba"
 afe = "afe"
 hge = "hge"
+ba = "ba"
 # python-keyring seems to use this.
 # TODO: remove after removing python-keyring
 Uncrypted = "Uncrypted"

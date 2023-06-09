@@ -101,7 +101,6 @@ code that happens to be owned by Google.
 *   perl-common-sense
 *   perl-Devel-Symdump 2.15
 *   perl-ExtUtils-MakeMaker / perl-ExtUtils-Command 7.10
-*   perl-Error 0.17024
 *   perl-EV 4.21
 *   perl-Fedora-VSP 0.001
 *   perl-GD 2.56

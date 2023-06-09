@@ -1,10 +1,10 @@
-FROM vrusinov/base-build:2022-05-29 as build
+FROM vrusinov/base-build:2022-12-25 as build
 
 RUN emerge -v net-vpn/openvpn
 # hadolint ignore=DL3059
 RUN emerge -v net-firewall/iptables
 
-FROM vrusinov/base:2022-05-29
+FROM vrusinov/base:2022-12-25
 # OpenVPN
 COPY --from=build /etc/group /etc/group
 COPY --from=build /etc/openvpn/down.sh /etc/openvpn/down.sh

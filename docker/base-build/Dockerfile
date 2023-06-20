@@ -7,7 +7,7 @@ COPY --from=portage /var/db/repos/gentoo /var/db/repos/gentoo
 RUN rm /etc/portage/make.conf && \
     mkdir -p /etc/portage/make.conf
 COPY make.conf /etc/portage/make.conf/00-base.conf
-COPY package-use-python /etc/portage/package.use/python
+COPY package-use-base /etc/portage/package.use/00-base
 COPY packages /etc/portage/profile/packages
 COPY locale.gen /etc/locale.gen
 
@@ -24,8 +24,8 @@ RUN etc-update --automode -5
 RUN emerge -v app-eselect/eselect-repository
 
 # hadolint ignore=DL3059
-RUN emerge --depclean && \
-    emerge -v app-portage/gentoolkit && \
+RUN emerge --depclean
+RUN emerge -v app-portage/gentoolkit && \
     revdep-rebuild
 
 ENTRYPOINT ["/bin/bash"]

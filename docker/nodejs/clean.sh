@@ -1,7 +1,5 @@
 #!/bin/bash
 
-rm /bin/df
-rm -f /bin/lsblk
 rm -f /bin/sed
 rm -f /bin/su
 rm -f /bin/tar
@@ -27,6 +25,7 @@ rm -f /usr/sbin/chgpasswd
 rm -f /usr/sbin/delpart
 rm -f /usr/sbin/dispatch-conf
 rm -f /usr/sbin/groupdel
+rm -r /usr/lib64/gconv/gconv-modules.d
 rm -rf /bin/chroot
 rm -rf /ect/bash
 rm -rf /etc/bash
@@ -52,10 +51,6 @@ rm -rf /usr/lib64/cmake
 rm -rf /usr/lib64/gconv/BIG5HKSCS.so
 rm -rf /usr/lib64/gconv/CP932.so
 rm -rf /usr/lib64/gconv/IBM930.so
-rm /usr/lib64/gconv/IBM939.so
-rm /usr/lib64/gconv/GBBIG5.so
-rm /usr/lib64/gconv/libISOIR165.so
-rm /usr/lib64/gconv/libGB.so
 rm -rf /usr/lib64/libbz2.so
 rm -rf /usr/lib64/libgnutlsxx.so.*
 rm -rf /usr/lib64/libnettle.so.*
@@ -98,6 +93,7 @@ rm /bin/chgrp
 rm /bin/dd
 rm /bin/expr
 rm /bin/gunzip
+rm /bin/lsblk
 rm /bin/mknod
 rm /bin/ping4
 rm /bin/rmdir
@@ -120,8 +116,11 @@ rm /usr/bin/g++*
 rm /usr/bin/localedef
 rm /usr/bin/mpicalc
 rm /usr/bin/msgattrib
+rm /usr/bin/openssl
 rm /usr/bin/pkgconf
 rm /usr/bin/pzstd
+rm /usr/bin/re2c
+rm /usr/bin/re2go
 rm /usr/bin/setarch
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzdiff
@@ -146,6 +145,11 @@ rm /usr/lib/python-exec/python3.*/glsa-check
 rm /usr/lib/python-exec/python3.*/meson
 rm /usr/lib/python-exec/python3.*/python3-config
 rm /usr/lib/python-exec/python3.*/quickpkg
+rm /usr/lib64/gconv/GBBIG5.so
+rm /usr/lib64/gconv/IBM939.so
+rm /usr/lib64/gconv/libGB.so
+rm /usr/lib64/gconv/libISOIR165.so
+rm /usr/lib64/libperl.so*
 rm /usr/sbin/applygnupgdefaults
 rm /usr/sbin/env-update
 rm /usr/sbin/etc-update
@@ -164,8 +168,6 @@ rm /usr/sbin/savelog
 rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/useradd
 rm /usr/sbin/usermod
-rm /usr/bin/openssl
-rm /usr/bin/re2go
 
 # Remove this script:
 rm -f /bin/clean.sh

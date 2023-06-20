@@ -1,6 +1,5 @@
 #!/bin/sh
 
-rm -f /bin/attr
 rm -f /bin/df
 rm -f /bin/kmod
 rm -f /bin/lsblk
@@ -72,6 +71,7 @@ rm -f /usr/sbin/addpart
 rm -f /usr/sbin/delpart
 rm -r /etc/udev
 rm -r /usr/lib/gcc/x86_64-pc-linux-gnu/*/plugin
+rm -r /usr/lib64/gconv/gconv-modules.d
 rm -r /usr/share/doc
 rm -rf /bin/chown
 rm -rf /bin/chroot
@@ -137,6 +137,7 @@ rm -rf /var/cache/edb
 rm -rf /var/db
 rm -rf /var/lib/gentoo
 rm -rf /var/lib/portage
+rm /bin/attr
 rm /bin/systemd-tmpfiles
 rm /bin/vdir
 rm /etc/etc-update.conf
@@ -187,10 +188,14 @@ rm /usr/lib/python-exec/python3.*/regenworld
 rm /usr/lib/python-exec/python3.*/revdep-rebuild
 rm /usr/lib64/gconv/BIG5.so
 rm /usr/lib64/gconv/EUC-JP-MS.so
+rm /usr/lib64/gconv/GBBIG5.so
 rm /usr/lib64/gconv/IBM935.so
+rm /usr/lib64/gconv/IBM939.so
 rm /usr/lib64/gconv/ISO-2022-CN-EXT.so
 rm /usr/lib64/gconv/ISO-2022-JP.so
 rm /usr/lib64/gconv/ISO646.so
+rm /usr/lib64/gconv/libGB.so
+rm /usr/lib64/gconv/libISOIR165.so
 rm /usr/lib64/gconv/libJISX0213.so
 rm /usr/lib64/libc.a
 rm /usr/lib64/libpython3.11.so.1.0
@@ -211,8 +216,6 @@ rm /usr/sbin/restore-tar
 rm /usr/sbin/savelog
 rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/useradd
-rm /usr/lib64/gconv/libISOIR165.so
-rm /usr/lib64/gconv/GBBIG5.so
 
 # Remove this script:
 rm -rf /usr/local

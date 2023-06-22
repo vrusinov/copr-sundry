@@ -1,6 +1,5 @@
 #!/bin/bash
 
-rm -f /bin/sed
 rm -f /bin/su
 rm -f /bin/tar
 rm -f /bin/tty
@@ -50,7 +49,6 @@ rm -rf /usr/lib/tmpfiles.d
 rm -rf /usr/lib64/cmake
 rm -rf /usr/lib64/gconv/BIG5HKSCS.so
 rm -rf /usr/lib64/gconv/CP932.so
-rm -rf /usr/lib64/gconv/IBM930.so
 rm -rf /usr/lib64/libbz2.so
 rm -rf /usr/lib64/libgnutlsxx.so.*
 rm -rf /usr/lib64/libnettle.so.*
@@ -97,6 +95,7 @@ rm /bin/lsblk
 rm /bin/mknod
 rm /bin/ping4
 rm /bin/rmdir
+rm /bin/sed
 rm /bin/true
 rm /etc/etc-update.conf
 rm /etc/filesystems
@@ -113,6 +112,7 @@ rm /lib64/libnss_compat.so.*
 rm /sbin/capsh
 rm /usr/bin/bzcmp
 rm /usr/bin/g++*
+rm /usr/bin/gawk
 rm /usr/bin/localedef
 rm /usr/bin/mpicalc
 rm /usr/bin/msgattrib
@@ -143,13 +143,15 @@ rm /usr/lib/python-exec/python3.*/eshowkw
 rm /usr/lib/python-exec/python3.*/fixpackages
 rm /usr/lib/python-exec/python3.*/glsa-check
 rm /usr/lib/python-exec/python3.*/meson
-rm /usr/lib/python-exec/python3.*/python3-config
 rm /usr/lib/python-exec/python3.*/quickpkg
 rm /usr/lib64/gconv/GBBIG5.so
+rm /usr/lib64/gconv/IBM930.so
 rm /usr/lib64/gconv/IBM939.so
 rm /usr/lib64/gconv/libGB.so
 rm /usr/lib64/gconv/libISOIR165.so
+rm /usr/lib64/gconv/libKSC.so
 rm /usr/lib64/libperl.so*
+rm /usr/lib64/libpython3*
 rm /usr/sbin/applygnupgdefaults
 rm /usr/sbin/env-update
 rm /usr/sbin/etc-update
@@ -166,7 +168,6 @@ rm /usr/sbin/restore-tar
 rm /usr/sbin/rtcwake
 rm /usr/sbin/savelog
 rm /usr/sbin/update-ca-certificates
-rm /usr/sbin/useradd
 rm /usr/sbin/usermod
 
 # Remove this script:

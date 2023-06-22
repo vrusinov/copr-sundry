@@ -1,6 +1,5 @@
 #!/bin/sh
 
-rm -f /bin/df
 rm -f /bin/kmod
 rm -f /bin/lsblk
 rm -f /bin/mountpoint
@@ -138,6 +137,7 @@ rm -rf /var/db
 rm -rf /var/lib/gentoo
 rm -rf /var/lib/portage
 rm /bin/attr
+rm /bin/df
 rm /bin/systemd-tmpfiles
 rm /bin/vdir
 rm /etc/etc-update.conf
@@ -150,6 +150,7 @@ rm /lib/cpp
 rm /lib64/libfdisk.so.*
 rm /usr/bin/bzcmp
 rm /usr/bin/g++*
+rm /usr/bin/gawk
 rm /usr/bin/localedef
 rm /usr/bin/msgattrib
 rm /usr/bin/pkgconf
@@ -197,8 +198,10 @@ rm /usr/lib64/gconv/ISO646.so
 rm /usr/lib64/gconv/libGB.so
 rm /usr/lib64/gconv/libISOIR165.so
 rm /usr/lib64/gconv/libJISX0213.so
+rm /usr/lib64/gconv/libKSC.so
 rm /usr/lib64/libc.a
 rm /usr/lib64/libpython3.11.so.1.0
+rm /usr/lib64/libpython3*
 rm /usr/sbin/addgnupghome
 rm /usr/sbin/archive-conf
 rm /usr/sbin/chgpasswd

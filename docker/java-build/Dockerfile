@@ -1,11 +1,11 @@
-FROM vrusinov/base-build:2022-05-29 as base
+FROM vrusinov/base-build:2022-12-25 as base
 
 COPY openjdk.use /etc/portage/package.use/openjdk
 COPY make.conf /etc/portage/make.conf/01-java.conf
 
 # hadolint ignore=DL3059
-RUN emerge -uDN -v system && \
-    emerge -uDN -v world
+RUN emerge -uDN -v system
+RUN emerge -uDN -v world
 # hadolint ignore=DL3059
 RUN etc-update --automode -5
 # hadolint ignore=DL3059

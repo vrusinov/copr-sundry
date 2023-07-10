@@ -1,6 +1,5 @@
 #!/bin/sh
 
-rm -f /bin/kmod
 rm -f /bin/lsblk
 rm -f /bin/mountpoint
 rm -f /bin/stty
@@ -138,6 +137,7 @@ rm -rf /var/lib/gentoo
 rm -rf /var/lib/portage
 rm /bin/attr
 rm /bin/df
+rm /bin/kmod
 rm /bin/systemd-tmpfiles
 rm /bin/vdir
 rm /etc/etc-update.conf
@@ -149,6 +149,9 @@ rm /etc/shells
 rm /lib/cpp
 rm /lib64/libfdisk.so.*
 rm /usr/bin/bzcmp
+rm /usr/bin/cmake
+rm /usr/bin/cpack
+rm /usr/bin/ctest
 rm /usr/bin/g++*
 rm /usr/bin/gawk
 rm /usr/bin/localedef
@@ -156,6 +159,7 @@ rm /usr/bin/msgattrib
 rm /usr/bin/pkgconf
 rm /usr/bin/pzstd
 rm /usr/bin/setarch
+rm /usr/bin/sqlite3
 rm /usr/bin/sqlite3
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzegrep

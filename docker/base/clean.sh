@@ -1,6 +1,5 @@
 #!/bin/sh
 
-rm -f /bin/lsblk
 rm -f /bin/mountpoint
 rm -f /bin/stty
 rm -f /bin/su
@@ -70,6 +69,7 @@ rm -f /usr/sbin/delpart
 rm -r /etc/udev
 rm -r /usr/lib/gcc/x86_64-pc-linux-gnu/*/plugin
 rm -r /usr/lib64/gconv/gconv-modules.d
+rm -r /usr/lib64/systemd
 rm -r /usr/share/doc
 rm -rf /bin/chown
 rm -rf /bin/chroot
@@ -135,9 +135,9 @@ rm -rf /var/cache/edb
 rm -rf /var/db
 rm -rf /var/lib/gentoo
 rm -rf /var/lib/portage
-rm /bin/attr
 rm /bin/df
 rm /bin/kmod
+rm /bin/lsblk
 rm /bin/systemd-tmpfiles
 rm /bin/vdir
 rm /etc/etc-update.conf
@@ -159,7 +159,6 @@ rm /usr/bin/msgattrib
 rm /usr/bin/pkgconf
 rm /usr/bin/pzstd
 rm /usr/bin/setarch
-rm /usr/bin/sqlite3
 rm /usr/bin/sqlite3
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzegrep
@@ -197,6 +196,8 @@ rm /usr/lib64/gconv/GBBIG5.so
 rm /usr/lib64/gconv/IBM935.so
 rm /usr/lib64/gconv/IBM939.so
 rm /usr/lib64/gconv/ISO-2022-CN-EXT.so
+rm /usr/lib64/gconv/ISO-2022-CN.so
+rm /usr/lib64/gconv/ISO-2022-JP-3.so
 rm /usr/lib64/gconv/ISO-2022-JP.so
 rm /usr/lib64/gconv/ISO646.so
 rm /usr/lib64/gconv/libGB.so

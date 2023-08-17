@@ -1,4 +1,4 @@
-FROM vrusinov/base-build:2022-12-25 as base
+FROM vrusinov/base-build:2023-07-11 as base
 
 COPY openjdk.use /etc/portage/package.use/openjdk
 COPY make.conf /etc/portage/make.conf/01-java.conf

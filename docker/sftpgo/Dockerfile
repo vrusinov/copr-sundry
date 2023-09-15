@@ -2,12 +2,12 @@ FROM vrusinov/golang-build:1.19.4 as build
 
 COPY git.use /etc/portage/package.use/git
 
-RUN emerge -v dev-vcs/git && \
-    mkdir /tmp/build && \
+RUN emerge -v dev-vcs/git
+RUN mkdir /tmp/build && \
     cd /tmp/build && \
     git clone https://github.com/drakkan/sftpgo && \
     cd sftpgo && \
-    git checkout v1.0.0 && \
+    git checkout v1.1.1 && \
     go build -i && \
     cp sftpgo /bin && \
     mkdir -p /usr/share/sftpgo && \

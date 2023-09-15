@@ -1,6 +1,5 @@
 #!/bin/sh
 
-rm -f /bin/mountpoint
 rm -f /bin/stty
 rm -f /bin/su
 rm -f /bin/tar
@@ -138,6 +137,7 @@ rm -rf /var/lib/portage
 rm /bin/df
 rm /bin/kmod
 rm /bin/lsblk
+rm /bin/mountpoint
 rm /bin/systemd-tmpfiles
 rm /bin/vdir
 rm /etc/etc-update.conf
@@ -206,6 +206,7 @@ rm /usr/lib64/gconv/libJISX0213.so
 rm /usr/lib64/gconv/libKSC.so
 rm /usr/lib64/libc.a
 rm /usr/lib64/libpython3.11.so.1.0
+rm /usr/lib64/libpython3*
 rm /usr/lib64/libpython3*
 rm /usr/sbin/addgnupghome
 rm /usr/sbin/archive-conf

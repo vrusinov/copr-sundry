@@ -1,8 +1,9 @@
 #!/bin/sh
 
-rm -f /usr/bin/cmake
+rm -f /bin/go
 rm -f /usr/bin/cpack
 rm -f /usr/bin/ctest
+rm -r /usr/lib64/gconv
 rm -rf /etc/kernel
 rm -rf /etc/profile.d
 rm -rf /etc/python-exec
@@ -17,7 +18,6 @@ rm -rf /var/empty
 rm /bin/chmod
 rm /bin/dirname
 rm /bin/fuser
-rm -f /bin/go
 rm /bin/ls
 rm /bin/passwd
 rm /bin/sleep
@@ -30,12 +30,11 @@ rm /lib64/libhistory.so.*
 rm /sbin/fsfreeze
 rm /usr/bin/meson
 rm /usr/bin/xzcmp
-rm /usr/lib64/gconv/BIG5.so
-rm /usr/lib64/gconv/EUC-JP-MS.so
-rm /usr/lib64/gconv/IBM935.so
 rm /usr/lib64/libb2.so.*
+rm /usr/lib64/libc.a
 rm /usr/lib64/libgnutls.so.*
 rm /usr/lib64/libnettle.so
+rm /usr/lib64/libpython3*
 rm /usr/lib64/libtasn1.so.*
 rm /usr/libexec/editor
 rm /usr/sbin/backup-tar

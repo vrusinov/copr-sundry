@@ -132,7 +132,6 @@ code that happens to be owned by Google.
 *   python-cryptography 1.3.1
 *   python-cryptography-vectors 1.3.1
 *   python-dialog 3.3.0
-*   python-foolscap 0.10.1
 *   python-idna 2.0
 *   python-ipaddress 1.0.16
 *   python-iso8601 0.1.10

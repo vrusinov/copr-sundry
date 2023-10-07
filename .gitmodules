@@ -18,7 +18,7 @@
 	url = git://pkgs.fedoraproject.org/deltarpm.git
 [submodule "third_party/submodules/os-prober"]
 	path = third_party/submodules/os-prober
-	url = git://pkgs.fedoraproject.org/os-prober.git
+	url = https://src.fedoraproject.org/rpms/os-prober.git
 [submodule "third_party/submodules/perl-TermReadKey"]
 	path = third_party/submodules/perl-TermReadKey
 	url = git://pkgs.fedoraproject.org/perl-TermReadKey.git

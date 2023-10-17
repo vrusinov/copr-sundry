@@ -148,10 +148,12 @@ rm /etc/rpc
 rm /etc/shells
 rm /lib/cpp
 rm /lib64/libfdisk.so.*
+rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/cmake
 rm /usr/bin/cpack
 rm /usr/bin/ctest
+rm /usr/bin/dirmngr
 rm /usr/bin/g++*
 rm /usr/bin/gawk
 rm /usr/bin/localedef
@@ -193,6 +195,7 @@ rm /usr/lib/python-exec/python3.*/revdep-rebuild
 rm /usr/lib64/gconv/BIG5.so
 rm /usr/lib64/gconv/EUC-JP-MS.so
 rm /usr/lib64/gconv/GBBIG5.so
+rm /usr/lib64/gconv/gconv-modules.cache
 rm /usr/lib64/gconv/IBM935.so
 rm /usr/lib64/gconv/IBM939.so
 rm /usr/lib64/gconv/ISO-2022-CN-EXT.so

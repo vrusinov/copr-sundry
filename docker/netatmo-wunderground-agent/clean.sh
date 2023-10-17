@@ -3,7 +3,7 @@
 # TODO: re-enable once rebuilt without readline
 #rm /lib64/libreadline.so.*
 
-rm -rf /etc/kernel
+rm -r /etc/kernel
 rm -rf /etc/profile.d
 rm -rf /etc/python-exec
 rm -rf /usr/lib/go/api
@@ -28,9 +28,14 @@ rm /etc/mtab
 rm /lib64/libBrokenLocale.so.*
 rm /lib64/libhistory.so.*
 rm /sbin/fsfreeze
+rm /usr/bin/bison
+rm /usr/bin/dirmngr
 rm /usr/bin/meson
 rm /usr/bin/xzcmp
+rm /usr/lib64/gconv/gconv-modules.cache
 rm /usr/lib64/gconv/ISO-2022-CN-EXT.so
+rm /usr/lib64/gconv/ISO-2022-CN.so
+rm /usr/lib64/gconv/ISO-2022-JP-3.so
 rm /usr/lib64/gconv/ISO-2022-JP.so
 rm /usr/lib64/gconv/ISO646.so
 rm /usr/lib64/libb2.so.*
@@ -49,3 +54,5 @@ rm /usr/sbin/vigr
 
 rm /bin/clean.sh
 rm /bin/rm
+
+du -s * | sort -n

@@ -1,6 +1,5 @@
 #!/bin/bash
 
-rm -f /bin/su
 rm -f /bin/tar
 rm -f /bin/tty
 rm -f /etc/rpc
@@ -24,8 +23,6 @@ rm -f /usr/sbin/chgpasswd
 rm -f /usr/sbin/delpart
 rm -f /usr/sbin/dispatch-conf
 rm -f /usr/sbin/groupdel
-rm -r /usr/lib64/gconv/gconv-modules.d
-rm -rf /bin/chroot
 rm -rf /ect/bash
 rm -rf /etc/bash
 rm -rf /etc/env.d
@@ -88,6 +85,7 @@ rm -rf /var/db
 rm -rf /var/lib/gentoo
 rm -rf /var/lib/portage
 rm /bin/chgrp
+rm /bin/chroot
 rm /bin/dd
 rm /bin/expr
 rm /bin/gunzip
@@ -96,6 +94,7 @@ rm /bin/mknod
 rm /bin/ping4
 rm /bin/rmdir
 rm /bin/sed
+rm /bin/su
 rm /bin/true
 rm /etc/etc-update.conf
 rm /etc/filesystems
@@ -110,7 +109,9 @@ rm /lib/cpp
 rm /lib64/libfdisk.so.*
 rm /lib64/libnss_compat.so.*
 rm /sbin/capsh
+rm /usr/bin/bison
 rm /usr/bin/bzcmp
+rm /usr/bin/dirmngr
 rm /usr/bin/g++*
 rm /usr/bin/gawk
 rm /usr/bin/localedef
@@ -145,11 +146,14 @@ rm /usr/lib/python-exec/python3.*/glsa-check
 rm /usr/lib/python-exec/python3.*/meson
 rm /usr/lib/python-exec/python3.*/quickpkg
 rm /usr/lib64/gconv/GBBIG5.so
+rm /usr/lib64/gconv/gconv-modules.cache
 rm /usr/lib64/gconv/IBM930.so
 rm /usr/lib64/gconv/IBM939.so
 rm /usr/lib64/gconv/libGB.so
 rm /usr/lib64/gconv/libISOIR165.so
 rm /usr/lib64/gconv/libKSC.so
+rm /usr/lib64/gconv/T.61.so
+rm /usr/lib64/gconv/UTF-7.so
 rm /usr/lib64/libperl.so*
 rm /usr/lib64/libpython3*
 rm /usr/sbin/applygnupgdefaults

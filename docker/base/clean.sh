@@ -1,6 +1,5 @@
 #!/bin/sh
 
-rm -f /bin/stty
 rm -f /bin/su
 rm -f /bin/tar
 rm -f /bin/tty
@@ -138,6 +137,7 @@ rm /bin/df
 rm /bin/kmod
 rm /bin/lsblk
 rm /bin/mountpoint
+rm /bin/stty
 rm /bin/systemd-tmpfiles
 rm /bin/vdir
 rm /etc/etc-update.conf
@@ -207,6 +207,8 @@ rm /usr/lib64/gconv/libGB.so
 rm /usr/lib64/gconv/libISOIR165.so
 rm /usr/lib64/gconv/libJISX0213.so
 rm /usr/lib64/gconv/libKSC.so
+rm /usr/lib64/gconv/T.61.so
+rm /usr/lib64/gconv/UTF-7.so
 rm /usr/lib64/libc.a
 rm /usr/lib64/libpython3.11.so.1.0
 rm /usr/lib64/libpython3*

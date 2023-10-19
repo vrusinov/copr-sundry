@@ -1,6 +1,5 @@
 #!/bin/sh
 
-rm -f /bin/su
 rm -f /bin/tar
 rm -f /bin/tty
 rm -f /etc/os-release
@@ -74,7 +73,6 @@ rm -rf /bin/chroot
 rm -rf /bin/egrep
 rm -rf /bin/nano
 rm -rf /bin/ping4
-rm -rf /bin/su
 rm -rf /etc/env.d
 rm -rf /etc/kernel/
 rm -rf /etc/modprobe.d
@@ -101,7 +99,6 @@ rm -rf /usr/lib64/gconv/CP932.so
 rm -rf /usr/lib64/gconv/IBM1390.so
 rm -rf /usr/lib64/gconv/IBM1399.so
 rm -rf /usr/lib64/gconv/IBM930.so
-rm -rf /usr/lib64/gconv/IBM939.so
 rm -rf /usr/lib64/locale
 rm -rf /usr/lib64/perl5
 rm -rf /usr/lib64/perl5/*/x86_64-linux/auto/Encode
@@ -138,6 +135,7 @@ rm /bin/kmod
 rm /bin/lsblk
 rm /bin/mountpoint
 rm /bin/stty
+rm /bin/su
 rm /bin/systemd-tmpfiles
 rm /bin/vdir
 rm /etc/etc-update.conf
@@ -194,10 +192,13 @@ rm /usr/lib/python-exec/python3.*/regenworld
 rm /usr/lib/python-exec/python3.*/revdep-rebuild
 rm /usr/lib64/gconv/BIG5.so
 rm /usr/lib64/gconv/EUC-JP-MS.so
+rm /usr/lib64/gconv/EUC-TW.so
 rm /usr/lib64/gconv/GBBIG5.so
 rm /usr/lib64/gconv/gconv-modules.cache
 rm /usr/lib64/gconv/IBM935.so
 rm /usr/lib64/gconv/IBM939.so
+rm /usr/lib64/gconv/ISO_6937-2.so
+rm /usr/lib64/gconv/ISO_6937.so
 rm /usr/lib64/gconv/ISO-2022-CN-EXT.so
 rm /usr/lib64/gconv/ISO-2022-CN.so
 rm /usr/lib64/gconv/ISO-2022-JP-3.so
@@ -210,6 +211,7 @@ rm /usr/lib64/gconv/libKSC.so
 rm /usr/lib64/gconv/T.61.so
 rm /usr/lib64/gconv/UTF-7.so
 rm /usr/lib64/libc.a
+rm /usr/lib64/libperl.so.*
 rm /usr/lib64/libpython3.11.so.1.0
 rm /usr/lib64/libpython3*
 rm /usr/lib64/libpython3*

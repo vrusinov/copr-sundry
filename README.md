@@ -158,6 +158,7 @@ code that happens to be owned by Google.
 *   rubygem-fog-profitbricks 0.0.3
 *   rubygem-pathspec 0.0.2
 *   rubygem-retriable 1.4.1
+*   rust-packaging 25.2
 *   yum 3.4.3-508
 
 ## TODO / Future work

@@ -1,0 +1,1 @@
+../third_party/submodules/rust-packaging/rust-packaging.spec

@@ -1,6 +1,5 @@
 #!/bin/sh
 
-rm -f /bin/tar
 rm -f /bin/tty
 rm -f /etc/os-release
 rm -f /etc/shadow-
@@ -137,6 +136,7 @@ rm /bin/mountpoint
 rm /bin/stty
 rm /bin/su
 rm /bin/systemd-tmpfiles
+rm /bin/tar
 rm /bin/vdir
 rm /etc/etc-update.conf
 rm /etc/locale.gen
@@ -204,11 +204,14 @@ rm /usr/lib64/gconv/ISO-2022-CN.so
 rm /usr/lib64/gconv/ISO-2022-JP-3.so
 rm /usr/lib64/gconv/ISO-2022-JP.so
 rm /usr/lib64/gconv/ISO646.so
+rm /usr/lib64/gconv/JOHAB.so
 rm /usr/lib64/gconv/libGB.so
 rm /usr/lib64/gconv/libISOIR165.so
 rm /usr/lib64/gconv/libJISX0213.so
 rm /usr/lib64/gconv/libKSC.so
+rm /usr/lib64/gconv/SHIFT_JISX0213.so
 rm /usr/lib64/gconv/T.61.so
+rm /usr/lib64/gconv/TSCII.so
 rm /usr/lib64/gconv/UTF-7.so
 rm /usr/lib64/libc.a
 rm /usr/lib64/libperl.so.*

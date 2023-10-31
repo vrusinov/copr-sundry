@@ -1,6 +1,7 @@
 #!/bin/sh
 
-rm -f /bin/tty
+alias rm='rm -r'
+
 rm -f /etc/os-release
 rm -f /etc/shadow-
 rm -f /sbin/blkzone
@@ -137,6 +138,7 @@ rm /bin/stty
 rm /bin/su
 rm /bin/systemd-tmpfiles
 rm /bin/tar
+rm /bin/tty
 rm /bin/vdir
 rm /etc/etc-update.conf
 rm /etc/locale.gen
@@ -235,6 +237,7 @@ rm /usr/sbin/restore-tar
 rm /usr/sbin/savelog
 rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/useradd
+rm /usr/share/cmake
 
 # Remove this script:
 rm -rf /usr/local

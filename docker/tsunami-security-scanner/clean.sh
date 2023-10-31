@@ -2,10 +2,11 @@
 
 alias rm='rm -r'
 
-rm /etc/udev/
-rm /opt/openjdk*/legal/
+rm /opt/openjdk*/bin/rmiregistry
+rm /opt/openjdk*/bin/serialver
+rm /opt/openjdk*/bin/unpack200
+rm /opt/openjdk*/legal
 rm /usr/lib64/binutils/
-rm /usr/lib64/gconv/BIG5*.so
 rm /usr/lib64/gconv/IBM*.so
 rm /usr/lib64/gconv/libJISX0213.so
 rm /usr/share/cmake/

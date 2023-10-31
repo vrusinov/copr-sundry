@@ -49,16 +49,12 @@ RUN chmod +x build_all.sh && \
 
 # Compile the Tsunami scanner
 WORKDIR /tmp
-RUN wget --progress=dot:giga https://github.com/google/tsunami-security-scanner/archive/refs/tags/v0.0.17.tar.gz
-RUN tar xf v0.0.17.tar.gz
-WORKDIR /tmp/tsunami-security-scanner-0.0.17/
+RUN wget --progress=dot:giga https://github.com/google/tsunami-security-scanner/archive/refs/tags/v0.0.18.tar.gz
+RUN tar xf v0.0.18.tar.gz
+WORKDIR /tmp/tsunami-security-scanner-0.0.18/
 RUN ./gradlew shadowJar && \
     cp "$(find . -name 'tsunami-main-*-cli.jar')" /opt/tsunami/tsunami.jar && \
     cp ./tsunami.yaml /opt/tsunami/
-
-COPY clean.sh /usr/local/bin/clean.sh
-RUN chmod +x /usr/local/bin/clean.sh && \
-    /usr/local/bin/clean.sh
 
 FROM vrusinov/java:11.0.18_p10 as base
 
@@ -69,8 +65,12 @@ COPY --from=build /usr/lib64/liblinear.so* /usr/lib64/
 COPY --from=build /usr/lib64/libpcap* /usr/lib64/
 COPY --from=build /usr/share/ncrack/ /usr/share/ncrack/
 COPY --from=build /usr/share/nmap/ /usr/share/nmap/
-
 COPY entrypoint.sh /bin/entrypoint.sh
+
+COPY clean.sh /usr/local/bin/clean.sh
+RUN chmod +x /usr/local/bin/clean.sh && \
+    /usr/local/bin/clean.sh
+
 ENV IP_V4_TARGET ""
 ENV IP_V6_TARGET ""
 ENTRYPOINT ["/bin/entrypoint.sh"]

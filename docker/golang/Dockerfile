@@ -1,14 +1,13 @@
-FROM vrusinov/golang-build:1.19.4 as base
+FROM vrusinov/golang-build:1.21.3 as base
 
-COPY clean.sh /bin/clean.sh
-RUN chmod +x /bin/clean.sh && /bin/clean.sh
-
-FROM vrusinov/base:2022-12-18
-COPY --from=base /usr/bin/go /bin/
+FROM vrusinov/base:2023-10-19
+COPY --from=base /usr/bin/go /usr/bin/
 COPY --from=base /usr/lib/go/bin/go /usr/lib/go/bin/go
 
 COPY clean.sh /bin/clean.sh
 RUN chmod +x /bin/clean.sh && /bin/clean.sh
 
+ENV GOROOT /usr
+
 #ENTRYPOINT ["/bin/bash"]
-ENTRYPOINT ["/bin/go", "version"]
+ENTRYPOINT ["/usr/bin/go", "version"]

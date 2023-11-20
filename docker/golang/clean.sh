@@ -1,12 +1,7 @@
 #!/bin/sh
 
-rm -f /bin/attr
-rm -f /bin/awk
-rm -f /bin/chroot
-rm -f /bin/df
-rm -f /bin/egrep
-rm -f /bin/lsblk
-rm -f /bin/su
+alias rm='rm -r'
+
 rm -f /bin/tar
 rm -f /bin/tty
 rm -f /etc/rpc
@@ -38,11 +33,6 @@ rm -f /usr/bin/pyvenv*
 rm -f /usr/bin/sg
 rm -f /usr/bin/zcmp
 rm -f /usr/bin/zstd
-rm -f /usr/lib64/gconv/CP932.so
-rm -f /usr/lib64/gconv/GB18030.so
-rm -f /usr/lib64/gconv/IBM1388.so
-rm -f /usr/lib64/gconv/IBM930.so
-rm -f /usr/lib64/gconv/IBM939.so
 rm -f /usr/lib64/libcurl.so*
 rm -f /usr/lib64/libfl.a
 rm -f /usr/sbin/addpart
@@ -114,13 +104,20 @@ rm -rf /usr/x86_64-pc-linux-gnu
 rm -rf /var/db
 rm -rf /var/lib/gentoo
 rm -rf /var/lib/portage
+rm /bin/attr
+rm /bin/awk
 rm /bin/chgrp
+rm /bin/chroot
 rm /bin/dd
+rm /bin/df
+rm /bin/egrep
 rm /bin/expr
 rm /bin/gunzip
+rm /bin/lsblk
 rm /bin/mknod
 rm /bin/ping4
 rm /bin/rmdir
+rm /bin/su
 rm /bin/systemd-tmpfiles
 rm /bin/true
 rm /etc/etc-update.conf
@@ -161,16 +158,12 @@ rm /usr/lib/python-exec/python3.*/env-update
 rm /usr/lib/python-exec/python3.*/equery
 rm /usr/lib/python-exec/python3.*/eshowkw
 rm /usr/lib/python-exec/python3.*/fixpackages
-rm /usr/lib/python-exec/python3.*/glsa-check
-rm /usr/lib/python-exec/python3.*/meson
-rm /usr/lib/python-exec/python3.*/portageq
-rm /usr/lib/python-exec/python3.*/pydoc
-rm /usr/lib/python-exec/python3.*/python-config
-rm /usr/lib/python-exec/python3.*/python3-config
-rm /usr/lib/python-exec/python3.*/quickpkg
-rm /usr/lib/python-exec/python3.*/regenworld
-rm /usr/lib/python-exec/python3.*/revdep-rebuild
-rm /usr/sbin/addgnupghome
+rm /usr/lib64/gconv/IBM1388.so
+rm /usr/lib64/gconv/IBM930.so
+rm /usr/lib64/gconv/IBM939.so
+rm /usr/lib64/gconv/JOHAB.so
+rm /usr/lib64/gconv/SHIFT_JISX0213.so
+rm /usr/lib64/gconv/TSCII.so
 rm /usr/sbin/applygnupgdefaults
 rm /usr/sbin/archive-conf
 rm /usr/sbin/chgpasswd
@@ -180,7 +173,6 @@ rm /usr/sbin/env-update
 rm /usr/sbin/etc-update
 rm /usr/sbin/groupadd
 rm /usr/sbin/grpck
-rm /usr/sbin/grpunconv
 rm /usr/sbin/ldattach
 rm /usr/sbin/locale-gen
 rm /usr/sbin/pwconv
@@ -188,10 +180,7 @@ rm /usr/sbin/pwunconv
 rm /usr/sbin/regenworld
 rm /usr/sbin/restore-tar
 rm /usr/sbin/rtcwake
-rm /usr/sbin/savelog
-rm /usr/sbin/useradd
 rm /usr/sbin/usermod
-rm /usr/sbin/uuidd
 
 # Remove this script:
-rm -rf /bin/clean.sh
+rm /bin/clean.sh

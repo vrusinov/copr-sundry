@@ -2,7 +2,6 @@
 
 alias rm='rm -r'
 
-rm -f /etc/os-release
 rm -f /etc/shadow-
 rm -f /sbin/blkzone
 rm -f /sbin/chcpu
@@ -143,6 +142,7 @@ rm /bin/vdir
 rm /etc/etc-update.conf
 rm /etc/locale.gen
 rm /etc/login.access
+rm /etc/os-release
 rm /etc/profile
 rm /etc/rpc
 rm /etc/shells
@@ -193,10 +193,14 @@ rm /usr/lib/python-exec/python3.*/quickpkg
 rm /usr/lib/python-exec/python3.*/regenworld
 rm /usr/lib/python-exec/python3.*/revdep-rebuild
 rm /usr/lib64/gconv/BIG5.so
+rm /usr/lib64/gconv/CP932.so
 rm /usr/lib64/gconv/EUC-JP-MS.so
 rm /usr/lib64/gconv/EUC-TW.so
+rm /usr/lib64/gconv/GB18030.so
 rm /usr/lib64/gconv/GBBIG5.so
 rm /usr/lib64/gconv/gconv-modules.cache
+rm /usr/lib64/gconv/IBM1388.so
+rm /usr/lib64/gconv/IBM930.so
 rm /usr/lib64/gconv/IBM935.so
 rm /usr/lib64/gconv/IBM939.so
 rm /usr/lib64/gconv/ISO_6937-2.so
@@ -238,6 +242,7 @@ rm /usr/sbin/savelog
 rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/useradd
 rm /usr/share/cmake
+
 
 # Remove this script:
 rm -rf /usr/local

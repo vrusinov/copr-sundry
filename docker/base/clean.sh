@@ -2,7 +2,6 @@
 
 alias rm='rm -r'
 
-rm -f /etc/shadow-
 rm -f /sbin/blkzone
 rm -f /sbin/chcpu
 rm -f /sbin/ctrlaltdel
@@ -145,8 +144,10 @@ rm /etc/login.access
 rm /etc/os-release
 rm /etc/profile
 rm /etc/rpc
+rm /etc/shadow-
 rm /etc/shells
 rm /lib/cpp
+rm /lib/udev/hwdb.d
 rm /lib64/libfdisk.so.*
 rm /usr/bin/bison
 rm /usr/bin/bzcmp

@@ -2,7 +2,6 @@
 
 alias rm='rm -r'
 
-rm -f /sbin/blkzone
 rm -f /sbin/chcpu
 rm -f /sbin/ctrlaltdel
 rm -f /sbin/fsck
@@ -149,6 +148,7 @@ rm /etc/shells
 rm /lib/cpp
 rm /lib/udev/hwdb.d
 rm /lib64/libfdisk.so.*
+rm /sbin/blkzone
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/cmake
@@ -213,6 +213,7 @@ rm /usr/lib64/gconv/ISO-2022-JP.so
 rm /usr/lib64/gconv/ISO646.so
 rm /usr/lib64/gconv/JOHAB.so
 rm /usr/lib64/gconv/libGB.so
+rm /usr/lib64/gconv/libISOIR165.so
 rm /usr/lib64/gconv/libISOIR165.so
 rm /usr/lib64/gconv/libJISX0213.so
 rm /usr/lib64/gconv/libKSC.so

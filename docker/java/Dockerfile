@@ -1,6 +1,6 @@
 FROM vrusinov/java-build:17.0.6_p10 as build
 
-FROM vrusinov/base:2023-07-11
+FROM vrusinov/base:2023-10-19
 COPY --from=build /etc/java-config-2/ /etc/java-config-2/
 COPY --from=build /opt/openjdk-bin-17.0.6_p10/ /opt/openjdk-bin-17.0.6_p10/
 COPY --from=build /usr/bin/java /usr/bin/

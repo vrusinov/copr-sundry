@@ -32,6 +32,7 @@ code that happens to be owned by Google.
 ### Docker
 
 *   [Tsunami Security Scanner](https://github.com/google/tsunami-security-scanner)
+*   [SFTPGo](https://github.com/drakkan/sftpgo) 1.2.2
 
 ### RPMs
 

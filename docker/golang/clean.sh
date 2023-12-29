@@ -2,7 +2,6 @@
 
 alias rm='rm -r'
 
-rm -f /bin/tar
 rm -f /bin/tty
 rm -f /etc/rpc
 rm -f /lib64/libSetFault.so
@@ -119,6 +118,7 @@ rm /bin/ping4
 rm /bin/rmdir
 rm /bin/su
 rm /bin/systemd-tmpfiles
+rm /bin/tar
 rm /bin/true
 rm /etc/etc-update.conf
 rm /etc/filesystems
@@ -143,6 +143,7 @@ rm /usr/bin/setarch
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzdiff
 rm /usr/bin/xzegrep
+rm /usr/lib/go/pkg/
 rm /usr/lib/python-exec/python3.*/2to3
 rm /usr/lib/python-exec/python3.*/archive-conf
 rm /usr/lib/python-exec/python3.*/dispatch-conf
@@ -181,6 +182,7 @@ rm /usr/sbin/regenworld
 rm /usr/sbin/restore-tar
 rm /usr/sbin/rtcwake
 rm /usr/sbin/usermod
+rm /usr/share/cmake
 
 # Remove this script:
 rm /bin/clean.sh

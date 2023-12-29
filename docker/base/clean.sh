@@ -2,7 +2,6 @@
 
 alias rm='rm -r'
 
-rm -f /sbin/chcpu
 rm -f /sbin/ctrlaltdel
 rm -f /sbin/fsck
 rm -f /sbin/getpcaps
@@ -149,6 +148,7 @@ rm /lib/cpp
 rm /lib/udev/hwdb.d
 rm /lib64/libfdisk.so.*
 rm /sbin/blkzone
+rm /sbin/chcpu
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/cmake
@@ -200,6 +200,7 @@ rm /usr/lib64/gconv/EUC-TW.so
 rm /usr/lib64/gconv/GB18030.so
 rm /usr/lib64/gconv/GBBIG5.so
 rm /usr/lib64/gconv/gconv-modules.cache
+rm /usr/lib64/gconv/gconv-modules.d
 rm /usr/lib64/gconv/IBM1388.so
 rm /usr/lib64/gconv/IBM930.so
 rm /usr/lib64/gconv/IBM935.so

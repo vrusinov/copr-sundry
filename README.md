@@ -150,6 +150,7 @@ code that happens to be owned by Google.
 *   python-pyasn1 0.1.9
 *   python-pycparser 2.14
 *   python2-pyrfc3339 1.0
+*   python-rpmautospec 0.2.6
 *   python-rpm-macros
 *   python-simplejson 3.5.3
 *   python-six 1.10.0

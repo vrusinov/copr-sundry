@@ -1,0 +1,1 @@
+../third_party/submodules/cargo2rpm/cargo2rpm.spec

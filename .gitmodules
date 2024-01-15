@@ -178,3 +178,7 @@
 [submodule "third_party/submodules/cargo2rpm"]
 	path = third_party/submodules/cargo2rpm
 	url = https://src.fedoraproject.org/rpms/cargo2rpm.git
+[submodule "third_party/submodules/python-rpmautospec"]
+	path = third_party/submodules/python-rpmautospec
+	url = https://src.fedoraproject.org/rpms/python-rpmautospec.git
+	branch = f34

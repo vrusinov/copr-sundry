@@ -160,8 +160,9 @@ code that happens to be owned by Google.
 *   rubygem-fog-profitbricks 0.0.3
 *   rubygem-pathspec 0.0.2
 *   rubygem-retriable 1.4.1
+*   rust-concolor 0.0.8
 *   rust-packaging 25.2
-*   rust-snapbox-macros0.2 0.2.1
+*   rust-snapbox-macros 0.2.1
 *   yum 3.4.3-508
 
 ## TODO / Future work

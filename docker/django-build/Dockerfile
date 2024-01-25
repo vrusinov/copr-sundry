@@ -1,6 +1,6 @@
-FROM vrusinov/python3-build:3.9.16 as build
+FROM vrusinov/python3-build:3.10.9 as build
 
 RUN emerge -v dev-python/django
 
-ENTRYPOINT ["/usr/bin/python"]
+ENTRYPOINT ["/usr/bin/python", "--version"]
 #ENTRYPOINT ["/bin/bash"]

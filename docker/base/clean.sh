@@ -2,7 +2,6 @@
 
 alias rm='rm -r'
 
-rm -f /sbin/ctrlaltdel
 rm -f /sbin/fsck
 rm -f /sbin/getpcaps
 rm -f /sbin/hwclock
@@ -149,6 +148,7 @@ rm /lib/udev/hwdb.d
 rm /lib64/libfdisk.so.*
 rm /sbin/blkzone
 rm /sbin/chcpu
+rm /sbin/ctrlaltdel
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/cmake
@@ -193,6 +193,8 @@ rm /usr/lib/python-exec/python3.*/python3-config
 rm /usr/lib/python-exec/python3.*/quickpkg
 rm /usr/lib/python-exec/python3.*/regenworld
 rm /usr/lib/python-exec/python3.*/revdep-rebuild
+rm /usr/lib/python*/site-packages/_emerge
+rm /usr/lib/python*/site-packages/portage*
 rm /usr/lib64/gconv/BIG5.so
 rm /usr/lib64/gconv/CP932.so
 rm /usr/lib64/gconv/EUC-JP-MS.so
@@ -245,6 +247,7 @@ rm /usr/sbin/savelog
 rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/useradd
 rm /usr/share/cmake
+rm rm /usr/lib/python*/unittest
 
 
 # Remove this script:

@@ -163,6 +163,7 @@ code that happens to be owned by Google.
 *   rubygem-pathspec 0.0.2
 *   rubygem-retriable 1.4.1
 *   rust-concolor 0.0.8
+*   rust-concolor-query 0.0.5
 *   rust-packaging 25.2
 *   rust-snapbox-macros 0.2.1
 *   yum 3.4.3-508

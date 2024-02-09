@@ -164,6 +164,7 @@ code that happens to be owned by Google.
 *   rubygem-retriable 1.4.1
 *   rust-concolor 0.0.8
 *   rust-concolor-query 0.0.5
+*   rust-clap_mangen 0.1.11
 *   rust-packaging 25.2
 *   rust-snapbox 0.2.10
 *   rust-snapbox-macros 0.2.1

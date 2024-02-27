@@ -5,6 +5,7 @@ COPY make.conf /etc/portage/make.conf/01-java.conf
 
 # hadolint ignore=DL3059
 RUN emerge -uDN -v system
+# hadolint ignore=DL3059
 RUN emerge -uDN -v world
 # hadolint ignore=DL3059
 RUN etc-update --automode -5

@@ -1,4 +1,4 @@
-FROM vrusinov/base-build:2023-07-11 as base-build
+FROM vrusinov/base-build:2023-10-19 as base-build
 
 COPY make.conf /etc/portage/make.conf/01-nodejs.conf
 

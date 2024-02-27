@@ -2,7 +2,6 @@
 
 alias rm='rm -r'
 
-rm -f /sbin/fsck
 rm -f /sbin/getpcaps
 rm -f /sbin/hwclock
 rm -f /sbin/mkfs.minix
@@ -114,7 +113,6 @@ rm -rf /usr/share/i18n
 rm -rf /usr/share/man
 rm -rf /usr/share/nano
 rm -rf /usr/share/openpgp-keys
-rm -rf /usr/share/polkit-1
 rm -rf /usr/share/sandbox
 rm -rf /usr/share/sgml/
 rm -rf /usr/share/sgml/
@@ -149,6 +147,7 @@ rm /lib64/libfdisk.so.*
 rm /sbin/blkzone
 rm /sbin/chcpu
 rm /sbin/ctrlaltdel
+rm /sbin/fsck
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/cmake
@@ -241,7 +240,6 @@ rm /usr/sbin/grpunconv
 rm /usr/sbin/locale-gen
 rm /usr/sbin/newusers
 rm /usr/sbin/pwconv
-rm /usr/sbin/regenworld
 rm /usr/sbin/restore-tar
 rm /usr/sbin/savelog
 rm /usr/sbin/update-ca-certificates

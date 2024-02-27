@@ -1,11 +1,7 @@
 #!/bin/bash
 
-rm -f /bin/tar
-rm -f /bin/tty
-rm -f /etc/rpc
-rm -f /sbin/blkzone
-rm -f /sbin/chcpu
-rm -f /sbin/ctrlaltdel
+alias rm='rm -r'
+
 rm -f /sbin/fsck
 rm -f /sbin/getpcaps
 rm -f /sbin/hwclock
@@ -71,12 +67,10 @@ rm -rf /usr/share/gdb
 rm -rf /usr/share/gettext
 rm -rf /usr/share/gnuconfig
 rm -rf /usr/share/i18n
-rm -rf /usr/share/libgpg-error
 rm -rf /usr/share/man
 rm -rf /usr/share/nano
 rm -rf /usr/share/openpgp-keys
 rm -rf /usr/share/pixmaps
-rm -rf /usr/share/polkit-1
 rm -rf /usr/share/sandbox
 rm -rf /usr/share/tabset
 rm -rf /usr/share/terminfo
@@ -91,11 +85,12 @@ rm /bin/expr
 rm /bin/gunzip
 rm /bin/lsblk
 rm /bin/mknod
-rm /bin/ping4
 rm /bin/rmdir
 rm /bin/sed
 rm /bin/su
+rm /bin/tar
 rm /bin/true
+rm /bin/tty
 rm /etc/etc-update.conf
 rm /etc/filesystems
 rm /etc/inputrc
@@ -104,16 +99,21 @@ rm /etc/login.access
 rm /etc/login.defs
 rm /etc/passwd-
 rm /etc/profile
+rm /etc/rpc
 rm /etc/shells
 rm /lib/cpp
 rm /lib64/libfdisk.so.*
 rm /lib64/libnss_compat.so.*
+rm /sbin/blkzone
 rm /sbin/capsh
+rm /sbin/chcpu
+rm /sbin/ctrlaltdel
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/dirmngr
 rm /usr/bin/g++*
 rm /usr/bin/gawk
+rm /usr/bin/gpgsm
 rm /usr/bin/localedef
 rm /usr/bin/mpicalc
 rm /usr/bin/msgattrib
@@ -122,6 +122,7 @@ rm /usr/bin/pkgconf
 rm /usr/bin/pzstd
 rm /usr/bin/re2c
 rm /usr/bin/re2go
+rm /usr/bin/rsync
 rm /usr/bin/setarch
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzdiff
@@ -149,10 +150,13 @@ rm /usr/lib64/gconv/GBBIG5.so
 rm /usr/lib64/gconv/gconv-modules.cache
 rm /usr/lib64/gconv/IBM930.so
 rm /usr/lib64/gconv/IBM939.so
+rm /usr/lib64/gconv/JOHAB.so
 rm /usr/lib64/gconv/libGB.so
 rm /usr/lib64/gconv/libISOIR165.so
 rm /usr/lib64/gconv/libKSC.so
+rm /usr/lib64/gconv/SHIFT_JISX0213.so
 rm /usr/lib64/gconv/T.61.so
+rm /usr/lib64/gconv/TSCII.so
 rm /usr/lib64/gconv/UTF-7.so
 rm /usr/lib64/libperl.so*
 rm /usr/lib64/libpython3*
@@ -173,6 +177,8 @@ rm /usr/sbin/rtcwake
 rm /usr/sbin/savelog
 rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/usermod
+rm /usr/share/libgpg-error
+rm /usr/share/polkit-1
 
 # Remove this script:
 rm -f /bin/clean.sh

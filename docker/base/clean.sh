@@ -2,7 +2,6 @@
 
 alias rm='rm -r'
 
-rm -f /sbin/getpcaps
 rm -f /sbin/hwclock
 rm -f /sbin/mkfs.minix
 rm -f /sbin/setcap
@@ -148,6 +147,7 @@ rm /sbin/blkzone
 rm /sbin/chcpu
 rm /sbin/ctrlaltdel
 rm /sbin/fsck
+rm /sbin/getpcaps
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/cmake
@@ -194,6 +194,7 @@ rm /usr/lib/python-exec/python3.*/regenworld
 rm /usr/lib/python-exec/python3.*/revdep-rebuild
 rm /usr/lib/python*/site-packages/_emerge
 rm /usr/lib/python*/site-packages/portage*
+rm /usr/lib/python*/unittest
 rm /usr/lib64/gconv/BIG5.so
 rm /usr/lib64/gconv/CP932.so
 rm /usr/lib64/gconv/EUC-JP-MS.so
@@ -213,6 +214,7 @@ rm /usr/lib64/gconv/ISO-2022-CN.so
 rm /usr/lib64/gconv/ISO-2022-JP-3.so
 rm /usr/lib64/gconv/ISO-2022-JP.so
 rm /usr/lib64/gconv/ISO646.so
+rm /usr/lib64/gconv/ISO8859-6.so
 rm /usr/lib64/gconv/JOHAB.so
 rm /usr/lib64/gconv/libGB.so
 rm /usr/lib64/gconv/libISOIR165.so
@@ -245,7 +247,6 @@ rm /usr/sbin/savelog
 rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/useradd
 rm /usr/share/cmake
-rm rm /usr/lib/python*/unittest
 
 
 # Remove this script:

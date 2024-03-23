@@ -162,6 +162,7 @@ code that happens to be owned by Google.
 *   rubygem-fog-profitbricks 0.0.3
 *   rubygem-pathspec 0.0.2
 *   rubygem-retriable 1.4.1
+*   rust-config-file 0.2.3
 *   rust-concolor 0.0.8
 *   rust-concolor-query 0.0.5
 *   rust-clap_mangen 0.1.11

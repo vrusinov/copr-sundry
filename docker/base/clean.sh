@@ -1,9 +1,9 @@
 #!/bin/sh
 
+set -e
+
 alias rm='rm -r'
 
-rm -f /sbin/hwclock
-rm -f /sbin/mkfs.minix
 rm -f /sbin/setcap
 rm -f /sbin/sfdisk
 rm -f /sbin/sln
@@ -58,7 +58,6 @@ rm -f /usr/sbin/addpart
 rm -f /usr/sbin/delpart
 rm -r /etc/udev
 rm -r /usr/lib/gcc/x86_64-pc-linux-gnu/*/plugin
-rm -r /usr/lib64/gconv/gconv-modules.d
 rm -r /usr/lib64/systemd
 rm -r /usr/share/doc
 rm -rf /bin/chown
@@ -91,7 +90,6 @@ rm -rf /usr/lib64/gconv/BIG5HKSCS.so
 rm -rf /usr/lib64/gconv/CP932.so
 rm -rf /usr/lib64/gconv/IBM1390.so
 rm -rf /usr/lib64/gconv/IBM1399.so
-rm -rf /usr/lib64/gconv/IBM930.so
 rm -rf /usr/lib64/locale
 rm -rf /usr/lib64/perl5
 rm -rf /usr/lib64/perl5/*/x86_64-linux/auto/Encode
@@ -127,7 +125,6 @@ rm /bin/kmod
 rm /bin/lsblk
 rm /bin/mountpoint
 rm /bin/stty
-rm /bin/su
 rm /bin/systemd-tmpfiles
 rm /bin/tar
 rm /bin/tty
@@ -148,6 +145,8 @@ rm /sbin/chcpu
 rm /sbin/ctrlaltdel
 rm /sbin/fsck
 rm /sbin/getpcaps
+rm /sbin/hwclock
+rm /sbin/mkfs.minix
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/cmake
@@ -192,18 +191,13 @@ rm /usr/lib/python-exec/python3.*/python3-config
 rm /usr/lib/python-exec/python3.*/quickpkg
 rm /usr/lib/python-exec/python3.*/regenworld
 rm /usr/lib/python-exec/python3.*/revdep-rebuild
-rm /usr/lib/python*/site-packages/_emerge
-rm /usr/lib/python*/site-packages/portage*
-rm /usr/lib/python*/unittest
 rm /usr/lib64/gconv/BIG5.so
-rm /usr/lib64/gconv/CP932.so
+rm /usr/lib64/gconv/EUC-CN.so
+rm /usr/lib64/gconv/EUC-JISX0213.so
 rm /usr/lib64/gconv/EUC-JP-MS.so
 rm /usr/lib64/gconv/EUC-TW.so
-rm /usr/lib64/gconv/GB18030.so
 rm /usr/lib64/gconv/GBBIG5.so
 rm /usr/lib64/gconv/gconv-modules.cache
-rm /usr/lib64/gconv/gconv-modules.d
-rm /usr/lib64/gconv/IBM1388.so
 rm /usr/lib64/gconv/IBM930.so
 rm /usr/lib64/gconv/IBM935.so
 rm /usr/lib64/gconv/IBM939.so
@@ -213,11 +207,11 @@ rm /usr/lib64/gconv/ISO-2022-CN-EXT.so
 rm /usr/lib64/gconv/ISO-2022-CN.so
 rm /usr/lib64/gconv/ISO-2022-JP-3.so
 rm /usr/lib64/gconv/ISO-2022-JP.so
+rm /usr/lib64/gconv/ISO-2022-KR.so
 rm /usr/lib64/gconv/ISO646.so
 rm /usr/lib64/gconv/ISO8859-6.so
 rm /usr/lib64/gconv/JOHAB.so
 rm /usr/lib64/gconv/libGB.so
-rm /usr/lib64/gconv/libISOIR165.so
 rm /usr/lib64/gconv/libISOIR165.so
 rm /usr/lib64/gconv/libJISX0213.so
 rm /usr/lib64/gconv/libKSC.so
@@ -228,7 +222,6 @@ rm /usr/lib64/gconv/UTF-7.so
 rm /usr/lib64/libc.a
 rm /usr/lib64/libperl.so.*
 rm /usr/lib64/libpython3.11.so.1.0
-rm /usr/lib64/libpython3*
 rm /usr/lib64/libpython3*
 rm /usr/sbin/addgnupghome
 rm /usr/sbin/archive-conf
@@ -243,7 +236,6 @@ rm /usr/sbin/locale-gen
 rm /usr/sbin/newusers
 rm /usr/sbin/pwconv
 rm /usr/sbin/restore-tar
-rm /usr/sbin/savelog
 rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/useradd
 rm /usr/share/cmake

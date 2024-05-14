@@ -1,6 +1,6 @@
 FROM gentoo/portage:latest as portage
 
-FROM gentoo/stage3:amd64-nomultilib-systemd as gentoo
+FROM gentoo/stage3:amd64-nomultilib-systemd-mergedusr as gentoo
 
 COPY --from=portage /var/db/repos/gentoo /var/db/repos/gentoo
 
@@ -14,9 +14,9 @@ COPY locale.gen /etc/locale.gen
 # hadolint ignore=DL3059
 RUN emerge --sync
 # hadolint ignore=DL3059
-RUN emerge --update --deep --newuse --verbose system
+RUN emerge --update --deep --newuse --verbose --color y system
 # hadolint ignore=DL3059
-RUN emerge --update --deep --newuse --verbose world
+RUN emerge --update --deep --newuse --verbose --color y world
 # hadolint ignore=DL3059
 RUN etc-update --automode -5
 
@@ -25,7 +25,9 @@ RUN emerge -v app-eselect/eselect-repository
 
 # hadolint ignore=DL3059
 RUN emerge --depclean
-RUN emerge -v app-portage/gentoolkit && \
-    revdep-rebuild
+# hadolint ignore=DL3059
+RUN emerge -v app-portage/gentoolkit
+# hadolint ignore=DL3059
+RUN revdep-rebuild
 
 ENTRYPOINT ["/bin/bash"]

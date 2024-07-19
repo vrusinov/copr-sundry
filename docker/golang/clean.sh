@@ -1,10 +1,8 @@
 #!/bin/sh
 
 alias rm='rm -r'
+set -e
 
-rm -f /bin/tty
-rm -f /etc/rpc
-rm -f /lib64/libSetFault.so
 rm -f /sbin/blkzone
 rm -f /sbin/chcpu
 rm -f /sbin/ctrlaltdel
@@ -106,83 +104,25 @@ rm -rf /var/lib/portage
 rm /bin/attr
 rm /bin/awk
 rm /bin/chgrp
-rm /bin/chroot
 rm /bin/dd
-rm /bin/df
-rm /bin/egrep
 rm /bin/expr
 rm /bin/gunzip
-rm /bin/lsblk
 rm /bin/mknod
-rm /bin/ping4
 rm /bin/rmdir
-rm /bin/su
-rm /bin/systemd-tmpfiles
-rm /bin/tar
 rm /bin/true
-rm /etc/etc-update.conf
 rm /etc/filesystems
 rm /etc/inputrc
-rm /etc/locale.gen
-rm /etc/login.access
 rm /etc/login.defs
 rm /etc/passwd-
-rm /etc/profile
-rm /etc/shells
-rm /lib/cpp
-rm /lib64/libfdisk.so.*
 rm /lib64/libnss_compat.so.*
 rm /sbin/capsh
-rm /usr/bin/bzcmp
-rm /usr/bin/g++*
-rm /usr/bin/localedef
 rm /usr/bin/mpicalc
-rm /usr/bin/msgattrib
-rm /usr/bin/pkgconf
-rm /usr/bin/setarch
-rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzdiff
-rm /usr/bin/xzegrep
-rm /usr/lib/go/pkg/
-rm /usr/lib/python-exec/python3.*/2to3
-rm /usr/lib/python-exec/python3.*/archive-conf
-rm /usr/lib/python-exec/python3.*/dispatch-conf
-rm /usr/lib/python-exec/python3.*/ebuild
-rm /usr/lib/python-exec/python3.*/eclean
-rm /usr/lib/python-exec/python3.*/eclean-dist
-rm /usr/lib/python-exec/python3.*/egencache
-rm /usr/lib/python-exec/python3.*/ekeyword
-rm /usr/lib/python-exec/python3.*/emaint
-rm /usr/lib/python-exec/python3.*/emirrordist
-rm /usr/lib/python-exec/python3.*/enalyze
-rm /usr/lib/python-exec/python3.*/env-update
-rm /usr/lib/python-exec/python3.*/equery
-rm /usr/lib/python-exec/python3.*/eshowkw
-rm /usr/lib/python-exec/python3.*/fixpackages
-rm /usr/lib64/gconv/IBM1388.so
-rm /usr/lib64/gconv/IBM930.so
-rm /usr/lib64/gconv/IBM939.so
-rm /usr/lib64/gconv/JOHAB.so
-rm /usr/lib64/gconv/SHIFT_JISX0213.so
-rm /usr/lib64/gconv/TSCII.so
+rm /usr/lib64/gconv/CP1258.so
+rm /usr/lib64/gconv/gconv-modules.d/
+rm /usr/lib64/gconv/UTF-32.so
 rm /usr/sbin/applygnupgdefaults
-rm /usr/sbin/archive-conf
-rm /usr/sbin/chgpasswd
-rm /usr/sbin/chpasswd
-rm /usr/sbin/dispatch-conf
-rm /usr/sbin/env-update
-rm /usr/sbin/etc-update
-rm /usr/sbin/groupadd
-rm /usr/sbin/grpck
-rm /usr/sbin/ldattach
-rm /usr/sbin/locale-gen
-rm /usr/sbin/pwconv
-rm /usr/sbin/pwunconv
 rm /usr/sbin/regenworld
-rm /usr/sbin/restore-tar
-rm /usr/sbin/rtcwake
-rm /usr/sbin/usermod
-rm /usr/share/cmake
 
 # Remove this script:
 rm /bin/clean.sh

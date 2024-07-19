@@ -1,4 +1,4 @@
-FROM vrusinov/base-build:2023-10-19 as base-build
+FROM vrusinov/base-build:2024-05-14 as base-build
 
 RUN emerge -v dev-lang/go
 

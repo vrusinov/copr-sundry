@@ -4,7 +4,7 @@ set -e
 set -x
 
 date_v=$(date '+%Y-%m-%d')
-v="0.0.18"
+v="0.0.19"
 n="tsunami-security-scanner"
 
 mkdir -p /tmp/docker-build

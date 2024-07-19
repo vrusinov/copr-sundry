@@ -29,9 +29,9 @@ RUN chmod +x build_all.sh && \
     cp build/plugins/*.jar /opt/tsunami/plugins
 
 # Gradle wrapper is missing
-RUN emerge -v dev-java/gradle-bin:6.8.3
+RUN emerge -v dev-java/gradle-bin
 WORKDIR /tmp/tsunami-security-scanner-plugins/facebook/detectors/rce/cisco_smi/
-RUN gradle wrapper --gradle-version 6.8.3
+RUN gradle wrapper --gradle-version 7.0.2
 WORKDIR /tmp/tsunami-security-scanner-plugins/facebook
 RUN chmod +x build_all.sh && \
     ./build_all.sh && \
@@ -49,9 +49,9 @@ RUN chmod +x build_all.sh && \
 
 # Compile the Tsunami scanner
 WORKDIR /tmp
-RUN wget --progress=dot:giga https://github.com/google/tsunami-security-scanner/archive/refs/tags/v0.0.18.tar.gz
-RUN tar xf v0.0.18.tar.gz
-WORKDIR /tmp/tsunami-security-scanner-0.0.18/
+RUN wget --progress=dot:giga https://github.com/google/tsunami-security-scanner/archive/refs/tags/v0.0.19.tar.gz
+RUN tar xf v0.0.19.tar.gz
+WORKDIR /tmp/tsunami-security-scanner-0.0.19/
 RUN ./gradlew shadowJar && \
     cp "$(find . -name 'tsunami-main-*-cli.jar')" /opt/tsunami/tsunami.jar && \
     cp ./tsunami.yaml /opt/tsunami/

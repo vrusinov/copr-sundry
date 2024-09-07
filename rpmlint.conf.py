@@ -157,10 +157,6 @@ addFilter('python3?-ply.noarch: W: python-bytecode-without-source.*cpython.*')
 ## libsolv
 addFilter('libsolv.x86_64: W: shared-lib-calls-exit')
 
-# Python-cffi
-addFilter('python3?-cffi.x86_64: W: devel-file-in-non-devel-package')
-addFilter('python3-cffi.x86_64: W: unstripped-binary-or-object')
-
 # golang packages:
 addFilter('golang-googlecode-goprotobuf.x86_64: W: unstripped-binary-or-object')
 addFilter('golang-github-odeke-em-drive.spec:[0-9]+: W: rpm-buildroot-usage')

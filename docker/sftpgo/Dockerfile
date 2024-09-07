@@ -1,4 +1,4 @@
-FROM vrusinov/golang-build:1.21.3 as build
+FROM vrusinov/golang-build:1.22.3 as build
 
 COPY git.use /etc/portage/package.use/git
 
@@ -7,7 +7,7 @@ RUN mkdir /tmp/build && \
     cd /tmp/build && \
     git clone https://github.com/drakkan/sftpgo && \
     cd sftpgo && \
-    git checkout v1.2.2
+    git checkout v2.0.4
 WORKDIR /tmp/build/sftpgo
 RUN go build && \
     cp sftpgo /bin && \
@@ -16,7 +16,7 @@ RUN go build && \
     \
     useradd -rm -s /bin/sh sftpgo
 
-FROM vrusinov/golang:1.21.3
+FROM vrusinov/golang:1.22.3
 COPY --from=build /bin/sftpgo /bin/sftpgo
 COPY --from=build /etc/passwd /etc/passwd
 COPY --from=build /usr/bin/git /usr/bin/git
@@ -30,5 +30,5 @@ COPY clean.sh /bin/clean.sh
 RUN chmod +x /bin/clean.sh && /bin/clean.sh
 
 USER sftpgo
-#ENTRYPOINT ["/bin/bash"]
 ENTRYPOINT ["/bin/sftpgo", "-v"]
+#ENTRYPOINT ["/bin/bash"]

@@ -3,7 +3,6 @@
 alias rm='rm -r'
 set -e
 
-rm -f /sbin/blkzone
 rm -f /sbin/chcpu
 rm -f /sbin/ctrlaltdel
 rm -f /sbin/fsck
@@ -114,8 +113,11 @@ rm /etc/filesystems
 rm /etc/inputrc
 rm /etc/login.defs
 rm /etc/passwd-
+rm /etc/ssl/misc
 rm /lib64/libnss_compat.so.*
+rm /sbin/blkzone
 rm /sbin/capsh
+rm /sbin/fsfreeze
 rm /usr/bin/mpicalc
 rm /usr/bin/xzdiff
 rm /usr/lib64/gconv/CP1258.so

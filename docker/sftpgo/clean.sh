@@ -14,6 +14,7 @@ rm /etc/host.conf
 rm /etc/mtab
 rm /etc/profile.d
 rm /etc/python-exec
+rm /etc/ssl/misc
 rm /lib64/libBrokenLocale.so.*
 rm /lib64/libhistory.so.*
 rm /sbin/fsfreeze
@@ -38,7 +39,9 @@ rm /usr/sbin/perl-cleaner
 rm /usr/sbin/readprofile
 rm /usr/sbin/sysctl
 rm /usr/sbin/vigr
+rm /usr/share/gtk-doc
 rm /usr/share/libtool
+rm /usr/share/misc
 rm /var/empty
 
 rm /bin/clean.sh

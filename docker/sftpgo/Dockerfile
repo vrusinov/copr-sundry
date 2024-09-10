@@ -7,7 +7,7 @@ RUN mkdir /tmp/build && \
     cd /tmp/build && \
     git clone https://github.com/drakkan/sftpgo && \
     cd sftpgo && \
-    git checkout v2.0.4
+    git checkout v2.1.2
 WORKDIR /tmp/build/sftpgo
 RUN go build && \
     cp sftpgo /bin && \

@@ -22,17 +22,12 @@ Please see instructions at [COPR](https://copr.fedoraproject.org/coprs/vrusinov/
 Apache 2.0.
 Please see text of the license in LICENSE file.
 
-## DISCLAIMER
-
-This is not an official Google product (experimental or otherwise), it is just
-code that happens to be owned by Google.
-
 ## List of packages
 
 ### Docker
 
 *   [OpenVPN](https://openvpn.net/) 2.6.4
-*   [SFTPGo](https://github.com/drakkan/sftpgo) 2.0.4
+*   [SFTPGo](https://github.com/drakkan/sftpgo) 2.1.2
 *   [Tsunami Security Scanner](https://github.com/google/tsunami-security-scanner)
 
 ### RPMs

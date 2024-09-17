@@ -11,9 +11,12 @@ rm /opt/openjdk*/bin/unpack200
 rm /opt/openjdk*/jmods/java.desktop.jmod
 rm /opt/openjdk*/jmods/jdk.localedata.jmod
 rm /opt/openjdk*/legal
+rm /usr/bin/gpg
 rm /usr/lib64/binutils/
 rm /usr/lib64/gconv/IBM*.so
+rm /usr/lib64/tcl8.6
 rm /usr/share/cmake/
+rm /usr/share/gtk-doc/
 rm /usr/share/misc/magic/
 
 # Clean this script

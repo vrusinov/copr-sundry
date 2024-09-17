@@ -49,9 +49,9 @@ RUN chmod +x build_all.sh && \
 
 # Compile the Tsunami scanner
 WORKDIR /tmp
-RUN wget --progress=dot:giga https://github.com/google/tsunami-security-scanner/archive/refs/tags/v0.0.19.tar.gz
-RUN tar xf v0.0.19.tar.gz
-WORKDIR /tmp/tsunami-security-scanner-0.0.19/
+RUN wget --progress=dot:giga https://github.com/google/tsunami-security-scanner/archive/refs/tags/v0.0.20.tar.gz
+RUN tar xf v0.0.20.tar.gz
+WORKDIR /tmp/tsunami-security-scanner-0.0.20/
 RUN ./gradlew shadowJar && \
     cp "$(find . -name 'tsunami-main-*-cli.jar')" /opt/tsunami/tsunami.jar && \
     cp ./tsunami.yaml /opt/tsunami/

@@ -12,6 +12,7 @@ rm /usr/lib64/gconv/ISO8859-6.so
 rm /usr/lib64/gconv/JOHAB.so
 rm /usr/lib64/gconv/SHIFT_JISX0213.so
 rm /usr/lib64/gconv/TSCII.so
+rm /usr/share/gtk-doc/
 
 # Remove this script:
 rm -rf /usr/local

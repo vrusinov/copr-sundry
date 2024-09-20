@@ -86,7 +86,6 @@ Please see text of the license in LICENSE file.
 *   golang-github-thejerf-suture
 *   golang-githib-vitrun-qart
 *   grub2
-*   hawkey
 *   lafs-backup-tool
 *   libarchive
 *   libev

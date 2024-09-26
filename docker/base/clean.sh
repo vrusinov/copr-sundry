@@ -4,9 +4,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /sbin/setcap
-rm -f /sbin/sfdisk
-rm -f /sbin/sln
 rm -f /sbin/swapoff
 rm -f /usr/bin/asn1Decoding
 rm -f /usr/bin/autoupdate-*
@@ -147,6 +144,9 @@ rm /sbin/fsck
 rm /sbin/getpcaps
 rm /sbin/hwclock
 rm /sbin/mkfs.minix
+rm /sbin/setcap
+rm /sbin/sfdisk
+rm /sbin/sln
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/cmake
@@ -192,12 +192,14 @@ rm /usr/lib/python-exec/python3.*/quickpkg
 rm /usr/lib/python-exec/python3.*/regenworld
 rm /usr/lib/python-exec/python3.*/revdep-rebuild
 rm /usr/lib64/gconv/BIG5.so
+rm /usr/lib64/gconv/CP1258.so
 rm /usr/lib64/gconv/EUC-CN.so
 rm /usr/lib64/gconv/EUC-JISX0213.so
 rm /usr/lib64/gconv/EUC-JP-MS.so
 rm /usr/lib64/gconv/EUC-TW.so
 rm /usr/lib64/gconv/GBBIG5.so
 rm /usr/lib64/gconv/gconv-modules.cache
+rm /usr/lib64/gconv/gconv-modules.d
 rm /usr/lib64/gconv/IBM930.so
 rm /usr/lib64/gconv/IBM935.so
 rm /usr/lib64/gconv/IBM939.so
@@ -219,9 +221,9 @@ rm /usr/lib64/gconv/SHIFT_JISX0213.so
 rm /usr/lib64/gconv/T.61.so
 rm /usr/lib64/gconv/TSCII.so
 rm /usr/lib64/gconv/UTF-7.so
+rm /usr/lib64/gconv/VISCII.so
 rm /usr/lib64/libc.a
 rm /usr/lib64/libperl.so.*
-rm /usr/lib64/libpython3.11.so.1.0
 rm /usr/lib64/libpython3*
 rm /usr/sbin/addgnupghome
 rm /usr/sbin/archive-conf
@@ -239,6 +241,7 @@ rm /usr/sbin/restore-tar
 rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/useradd
 rm /usr/share/cmake
+
 
 
 # Remove this script:

@@ -12,6 +12,7 @@ COPY packages /etc/portage/profile/packages
 COPY locale.gen /etc/locale.gen
 
 # hadolint ignore=DL3059
+RUN eselect profile set default/linux/amd64/23.0/no-multilib/systemd
 RUN emerge --sync
 # hadolint ignore=DL3059
 RUN emerge --update --deep --newuse --verbose --color y system

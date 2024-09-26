@@ -1,2 +1,3 @@
 dev-lang/python xml
 sys-apps/dbus systemd
+sys-libs/ncurses minimal

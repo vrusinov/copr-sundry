@@ -4,7 +4,13 @@ version = 1
 [[annotations]]
 path = "third_party/subtrees/*/README.google"
 SPDX-FileCopyrightText = "2022 Google Inc"
-SPDX-License-Identifier = "Apache 2.0"
+SPDX-License-Identifier = "Apache-2.0"
+
+# TODO: remove this
+[[annotations]]
+path = "third_party/*/README.google"
+SPDX-FileCopyrightText = "2022 Google Inc"
+SPDX-License-Identifier = "Apache-2.0"
 
 [[annotations]]
 path = "third_party/subtrees/**"

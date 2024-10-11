@@ -19,7 +19,7 @@ repos:
         entry: hooks/pre-commit
         files: ^.*$
 -   repo: https://github.com/crate-ci/typos
-    rev: v1.13.6
+    rev: v1.26.0
     hooks:
       - id: typos
 - repo: https://github.com/fsfe/reuse-tool

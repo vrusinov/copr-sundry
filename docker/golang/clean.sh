@@ -3,7 +3,6 @@
 alias rm='rm -r'
 set -e
 
-rm -f /sbin/chcpu
 rm -f /sbin/ctrlaltdel
 rm -f /sbin/fsck
 rm -f /sbin/getpcaps
@@ -117,12 +116,14 @@ rm /etc/ssl/misc
 rm /lib64/libnss_compat.so.*
 rm /sbin/blkzone
 rm /sbin/capsh
+rm /sbin/chcpu
 rm /sbin/fsfreeze
 rm /usr/bin/mpicalc
 rm /usr/bin/xzdiff
 rm /usr/lib64/gconv/CP1258.so
 rm /usr/lib64/gconv/gconv-modules.d/
 rm /usr/lib64/gconv/UTF-32.so
+rm /usr/lib64/glibc-*
 rm /usr/sbin/applygnupgdefaults
 rm /usr/sbin/regenworld
 

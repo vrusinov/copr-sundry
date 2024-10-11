@@ -25,12 +25,15 @@ rm /usr/lib/go
 rm /usr/lib/systemd
 rm /usr/lib64/binutils/
 rm /usr/lib64/gconv
+rm /usr/lib64/glibc-*
 rm /usr/lib64/libb2.so.*
 rm /usr/lib64/libgnutls.so.*
 rm /usr/lib64/libnettle.so
 rm /usr/lib64/libtasn1.so.*
 rm /usr/lib64/tcl8.6
 rm /usr/libexec/editor
+rm /usr/libexec/keyboxd
+rm /usr/libexec/scdaemon
 rm /usr/sbin/backup-tar
 rm /usr/sbin/dump-remind
 rm /usr/sbin/fixpackages

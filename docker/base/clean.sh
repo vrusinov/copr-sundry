@@ -4,7 +4,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /sbin/swapoff
 rm -f /usr/bin/asn1Decoding
 rm -f /usr/bin/autoupdate-*
 rm -f /usr/bin/bzmore
@@ -147,6 +146,7 @@ rm /sbin/mkfs.minix
 rm /sbin/setcap
 rm /sbin/sfdisk
 rm /sbin/sln
+rm /sbin/swapoff
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/cmake
@@ -155,8 +155,10 @@ rm /usr/bin/ctest
 rm /usr/bin/dirmngr
 rm /usr/bin/g++*
 rm /usr/bin/gawk
+rm /usr/bin/gpg
 rm /usr/bin/localedef
 rm /usr/bin/msgattrib
+rm /usr/bin/openssl
 rm /usr/bin/pkgconf
 rm /usr/bin/pzstd
 rm /usr/bin/setarch
@@ -225,6 +227,7 @@ rm /usr/lib64/gconv/VISCII.so
 rm /usr/lib64/libc.a
 rm /usr/lib64/libperl.so.*
 rm /usr/lib64/libpython3*
+rm /usr/lib64/tcl*
 rm /usr/sbin/addgnupghome
 rm /usr/sbin/archive-conf
 rm /usr/sbin/chgpasswd
@@ -242,7 +245,5 @@ rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/useradd
 rm /usr/share/cmake
 
-
-
 # Remove this script:
-rm -rf /usr/local
+rm /usr/local

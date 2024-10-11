@@ -22,3 +22,8 @@ repos:
     rev: v1.13.6
     hooks:
       - id: typos
+- repo: https://github.com/fsfe/reuse-tool
+  rev: "v4.0.3"
+  hooks:
+    # TODO: switch to reuse-lint-file
+    - id: reuse

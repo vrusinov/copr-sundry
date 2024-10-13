@@ -12,6 +12,12 @@ path = "third_party/*/README.google"
 SPDX-FileCopyrightText = "2022 Google Inc"
 SPDX-License-Identifier = "Apache-2.0"
 
+# TODO: remove this
+[[annotations]]
+path = "third_party/**/sources"
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"
+
 [[annotations]]
 path = "third_party/subtrees/**"
 SPDX-FileCopyrightText = "NONE"

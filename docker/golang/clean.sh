@@ -3,8 +3,6 @@
 alias rm='rm -r'
 set -e
 
-rm -f /sbin/ctrlaltdel
-rm -f /sbin/fsck
 rm -f /sbin/getpcaps
 rm -f /sbin/hwclock
 rm -f /sbin/mkfs.minix
@@ -26,7 +24,6 @@ rm -f /usr/bin/msgfilter
 rm -f /usr/bin/passwd
 rm -f /usr/bin/pyvenv*
 rm -f /usr/bin/sg
-rm -f /usr/bin/zcmp
 rm -f /usr/bin/zstd
 rm -f /usr/lib64/libcurl.so*
 rm -f /usr/lib64/libfl.a
@@ -114,16 +111,16 @@ rm /etc/login.defs
 rm /etc/passwd-
 rm /etc/ssl/misc
 rm /lib64/libnss_compat.so.*
-rm /sbin/blkzone
 rm /sbin/capsh
-rm /sbin/chcpu
 rm /sbin/fsfreeze
+rm /usr/bin/gpg
 rm /usr/bin/mpicalc
 rm /usr/bin/xzdiff
-rm /usr/lib64/gconv/CP1258.so
-rm /usr/lib64/gconv/gconv-modules.d/
+rm /usr/bin/zcmp
+rm /usr/lib64/gconv/TIS-620.so
 rm /usr/lib64/gconv/UTF-32.so
 rm /usr/lib64/glibc-*
+rm /usr/lib64/tcl8.6
 rm /usr/sbin/applygnupgdefaults
 rm /usr/sbin/regenworld
 

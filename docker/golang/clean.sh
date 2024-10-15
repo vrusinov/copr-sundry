@@ -3,7 +3,6 @@
 alias rm='rm -r'
 set -e
 
-rm -f /sbin/getpcaps
 rm -f /sbin/hwclock
 rm -f /sbin/mkfs.minix
 rm -f /sbin/setcap
@@ -113,14 +112,15 @@ rm /etc/ssl/misc
 rm /lib64/libnss_compat.so.*
 rm /sbin/capsh
 rm /sbin/fsfreeze
-rm /usr/bin/gpg
+rm /usr/bin/ldconfig
 rm /usr/bin/mpicalc
 rm /usr/bin/xzdiff
 rm /usr/bin/zcmp
+rm /usr/lib64/binutils/x86_64-pc-linux-gnu/*/libbfd-*.gentoo-sys-devel-binutils-st.so
+rm /usr/lib64/gconv/TCVN5712-1.so
 rm /usr/lib64/gconv/TIS-620.so
 rm /usr/lib64/gconv/UTF-32.so
 rm /usr/lib64/glibc-*
-rm /usr/lib64/tcl8.6
 rm /usr/sbin/applygnupgdefaults
 rm /usr/sbin/regenworld
 

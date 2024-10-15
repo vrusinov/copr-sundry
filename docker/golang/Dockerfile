@@ -1,6 +1,6 @@
-FROM vrusinov/golang-build:1.22.6 as base
+FROM vrusinov/golang-build:1.23.1 as base
 
-FROM vrusinov/base:2024-09-20
+FROM vrusinov/base:2024-10-11
 COPY --from=base /usr/bin/go /usr/bin/
 COPY --from=base /usr/lib/go/bin/go /usr/lib/go/bin/go
 

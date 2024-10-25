@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
 rm -r /usr/lib/gcc/x86_64-pc-linux-gnu/*/include
 rm -r /usr/lib/gcc/x86_64-pc-linux-gnu/*/libgcc.a
 rm -r /usr/lib/gcc/x86_64-pc-linux-gnu/*/plugin

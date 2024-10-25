@@ -4,7 +4,7 @@ set -e
 set -x
 
 date_v=$(date '+%Y-%m-%d')
-v=2.6.4
+v=2.6.8
 n="openvpn"
 
 docker build -t vrusinov/$n:latest -t vrusinov/$n:$date_v -t vrusinov/$n:$v -t vrusinov/$n:$v.$date_v .

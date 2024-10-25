@@ -77,7 +77,6 @@ rm -rf /usr/lib/gcc/x86_64-pc-linux-gnu/*/plugin/include
 rm -rf /usr/lib/go/api/*.txt
 rm -rf /usr/lib/go/doc/
 rm -rf /usr/lib/portage
-rm -rf /usr/lib/python3*
 rm -rf /usr/lib/tmpfiles.d
 rm -rf /usr/lib64/binutils/*/*/include/
 rm -rf /usr/lib64/binutils/x86_64-pc-linux-gnu/*/ldscripts
@@ -193,6 +192,7 @@ rm /usr/lib/python-exec/python3.*/python3-config
 rm /usr/lib/python-exec/python3.*/quickpkg
 rm /usr/lib/python-exec/python3.*/regenworld
 rm /usr/lib/python-exec/python3.*/revdep-rebuild
+rm /usr/lib/python*
 rm /usr/lib64/gconv/BIG5.so
 rm /usr/lib64/gconv/CP1258.so
 rm /usr/lib64/gconv/EUC-CN.so

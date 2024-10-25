@@ -4,7 +4,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/asn1Decoding
 rm -f /usr/bin/autoupdate-*
 rm -f /usr/bin/bzmore
 rm -f /usr/bin/easy_install
@@ -146,6 +145,7 @@ rm /sbin/setcap
 rm /sbin/sfdisk
 rm /sbin/sln
 rm /sbin/swapoff
+rm /usr/bin/asn1Decoding
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/cmake
@@ -227,6 +227,7 @@ rm /usr/lib64/gconv/VISCII.so
 rm /usr/lib64/libc.a
 rm /usr/lib64/libperl.so.*
 rm /usr/lib64/libpython3*
+rm /usr/lib64/libunistring.so*
 rm /usr/lib64/tcl*
 rm /usr/sbin/addgnupghome
 rm /usr/sbin/archive-conf

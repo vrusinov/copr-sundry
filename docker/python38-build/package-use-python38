@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
 # Needs 3.10 or above:
 >=dev-python/certifi-3021.3.16-r3 python_targets_python3_10
 >=dev-python/charset-normalizer-3.2.0 python_targets_python3_10

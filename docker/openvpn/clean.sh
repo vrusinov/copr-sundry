@@ -4,9 +4,11 @@ alias rm='rm -r'
 set -e
 
 rm /usr/bin/gpg
+rm /usr/bin/openssl
 rm /usr/lib/python*/
 rm /usr/lib64/binutils/
 rm /usr/lib64/gconv/
+rm /usr/lib64/glibc-*
 rm /usr/lib64/tcl*
 
 # Remove this script:

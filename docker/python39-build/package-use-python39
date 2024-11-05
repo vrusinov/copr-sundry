@@ -1,0 +1,42 @@
+# SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+# Needs 3.10 or above:
+>=dev-python/certifi-3021.3.16-r3 python_targets_python3_10
+>=dev-python/flit-core-3.9.0 python_targets_python3_10
+>=dev-python/hatchling-1.18.0 python_targets_python3_10
+>=dev-python/idna-3.4 python_targets_python3_10
+>=dev-python/installer-0.7.0 python_targets_python3_10
+>=dev-python/jaraco-context-4.3.0 python_targets_python3_10
+>=dev-python/requests-2.31.0 python_targets_python3_10
+>=dev-python/six-1.16.0-r1 python_targets_python3_10
+>=dev-python/tomli-2.0.1-r1 python_targets_python3_10
+>=dev-python/trove-classifiers-2023.8.7 python_targets_python3_10
+app-eselect/eselect-repository python_single_target_python3_10
+app-portage/gemato python_targets_python3_10
+app-portage/gentoolkit python_targets_python3_10
+dev-python/calver python_targets_python3_10
+dev-python/charset-normalizer python_targets_python3_10
+dev-python/cython python_targets_python3_10
+dev-python/editables python_targets_python3_10
+dev-python/gpep517 python_targets_python3_10
+dev-python/jaraco-functools python_targets_python3_10
+dev-python/jaraco-text python_targets_python3_10
+dev-python/lxml python_targets_python3_10
+dev-python/more-itertools python_targets_python3_10
+dev-python/nspektr python_targets_python3_10
+dev-python/ordered-set python_targets_python3_10
+dev-python/packaging python_targets_python3_10
+dev-python/pathspec python_targets_python3_10
+dev-python/platformdirs python_targets_python3_10
+dev-python/pluggy python_targets_python3_10
+dev-python/pyparsing python_targets_python3_10
+dev-python/PySocks python_targets_python3_10
+dev-python/setuptools python_targets_python3_10
+dev-python/setuptools-scm python_targets_python3_10
+dev-python/typing-extensions python_targets_python3_10
+dev-python/urllib3 python_targets_python3_10
+dev-python/wheel python_targets_python3_10
+dev-util/meson python_targets_python3_10
+dev-util/meson-format-array python_targets_python3_10
+sys-apps/portage python_targets_python3_10

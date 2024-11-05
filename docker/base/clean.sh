@@ -4,7 +4,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/autoupdate-*
 rm -f /usr/bin/bzmore
 rm -f /usr/bin/easy_install
 rm -f /usr/bin/enc2xs-*-perl-*
@@ -146,6 +145,7 @@ rm /sbin/sfdisk
 rm /sbin/sln
 rm /sbin/swapoff
 rm /usr/bin/asn1Decoding
+rm /usr/bin/autoupdate-*
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/cmake

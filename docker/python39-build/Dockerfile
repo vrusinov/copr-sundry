@@ -1,17 +1,17 @@
 # SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
-FROM vrusinov/base-build:2022-12-25 as build
+FROM vrusinov/base-build:2023-07-11 as build
 
 COPY make.conf /etc/portage/make.conf/01-python.conf
 # hadolint: disable=DL3059
-RUN emerge -v  --noreplace dev-lang/python:3.9
+RUN emerge -v  --noreplace --color y dev-lang/python:3.9
+COPY package-use-python39 /etc/portage/package.use/01-python
 # hadolint: disable=DL3059
-RUN emerge -uDN -v1 world
+RUN emerge -uDN -v1 --color y world
 # hadolint: disable=DL3059
 RUN emerge --depclean
 # hadolint: disable=DL3059
 RUN etc-update --automode -5
 
-ENTRYPOINT ["/usr/bin/python3"]
-#ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/usr/bin/python3.9", "--version"]

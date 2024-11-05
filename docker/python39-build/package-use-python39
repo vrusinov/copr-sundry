@@ -5,6 +5,7 @@
 >=dev-python/backports-tarfile-1.1.1 python_targets_python3_10
 >=dev-python/certifi-3021.3.16-r3 python_targets_python3_10
 >=dev-python/flit-core-3.9.0 python_targets_python3_10
+>=dev-python/hatch-vcs-0.4.0 python_targets_python3_10
 >=dev-python/hatchling-1.18.0 python_targets_python3_10
 >=dev-python/idna-3.4 python_targets_python3_10
 >=dev-python/installer-0.7.0 python_targets_python3_10

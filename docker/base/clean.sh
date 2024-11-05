@@ -4,7 +4,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/easy_install
 rm -f /usr/bin/enc2xs-*-perl-*
 rm -f /usr/bin/gcc-ranlib
 rm -f /usr/bin/lessecho
@@ -152,9 +151,11 @@ rm /usr/bin/cmake
 rm /usr/bin/cpack
 rm /usr/bin/ctest
 rm /usr/bin/dirmngr
+rm /usr/bin/easy_install
 rm /usr/bin/g++*
 rm /usr/bin/gawk
 rm /usr/bin/gpg
+rm /usr/bin/ldconfig
 rm /usr/bin/localedef
 rm /usr/bin/msgattrib
 rm /usr/bin/openssl

@@ -4,7 +4,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/bzmore
 rm -f /usr/bin/easy_install
 rm -f /usr/bin/enc2xs-*-perl-*
 rm -f /usr/bin/gcc-ranlib
@@ -148,6 +147,7 @@ rm /usr/bin/asn1Decoding
 rm /usr/bin/autoupdate-*
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
+rm /usr/bin/bzmore
 rm /usr/bin/cmake
 rm /usr/bin/cpack
 rm /usr/bin/ctest

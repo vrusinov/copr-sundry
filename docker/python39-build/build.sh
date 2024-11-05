@@ -7,7 +7,7 @@ set -e
 set -x
 
 date_v=$(date '+%Y-%m-%d')
-v=3.9.19
+v=3.9.20
 v_short=3.9
 n="python3-build"
 

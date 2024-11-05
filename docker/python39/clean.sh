@@ -7,12 +7,13 @@ alias rm='rm -r'
 
 set -e
 
-rm -r /usr/lib/python3.9/test
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libatomic.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libgcc.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libstdc++fs.a
 rm /usr/lib/python*/distutils/tests
 rm /usr/lib/python*/unittest
 rm /usr/lib/python/ensurepip/pip-*-py3-none-any.whl
-rm /usr/lib64/gconv/SHIFT_JISX0213.so
-rm /usr/lib64/gconv/TSCII.so
+rm /usr/lib/python3.9/test
+rm /usr/lib/systemd
+rm /usr/lib64/gconv/CP1258.so
+rm /usr/lib64/gconv/gconv-modules.d

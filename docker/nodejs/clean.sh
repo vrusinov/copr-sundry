@@ -2,7 +2,8 @@
 
 alias rm='rm -r'
 
-rm -f /sbin/fsck
+set -e
+
 rm -f /sbin/getpcaps
 rm -f /sbin/hwclock
 rm -f /sbin/mkfs.minix
@@ -79,41 +80,28 @@ rm -rf /var/db
 rm -rf /var/lib/gentoo
 rm -rf /var/lib/portage
 rm /bin/chgrp
-rm /bin/chroot
 rm /bin/dd
 rm /bin/expr
 rm /bin/gunzip
-rm /bin/lsblk
 rm /bin/mknod
 rm /bin/rmdir
 rm /bin/sed
-rm /bin/su
-rm /bin/tar
 rm /bin/true
-rm /bin/tty
-rm /etc/etc-update.conf
 rm /etc/filesystems
-rm /etc/inputrc
-rm /etc/locale.gen
-rm /etc/login.access
 rm /etc/login.defs
 rm /etc/passwd-
-rm /etc/profile
-rm /etc/rpc
-rm /etc/shells
-rm /lib/cpp
-rm /lib64/libfdisk.so.*
 rm /lib64/libnss_compat.so.*
-rm /sbin/blkzone
 rm /sbin/capsh
 rm /sbin/chcpu
 rm /sbin/ctrlaltdel
+rm /sbin/fsck
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/dirmngr
 rm /usr/bin/g++*
 rm /usr/bin/gawk
 rm /usr/bin/gpgsm
+rm /usr/bin/ldconfig
 rm /usr/bin/localedef
 rm /usr/bin/mpicalc
 rm /usr/bin/msgattrib
@@ -144,22 +132,18 @@ rm /usr/lib/python-exec/python3.*/equery
 rm /usr/lib/python-exec/python3.*/eshowkw
 rm /usr/lib/python-exec/python3.*/fixpackages
 rm /usr/lib/python-exec/python3.*/glsa-check
-rm /usr/lib/python-exec/python3.*/meson
 rm /usr/lib/python-exec/python3.*/quickpkg
+rm /usr/lib64/gconv/CP1258.so
 rm /usr/lib64/gconv/GBBIG5.so
 rm /usr/lib64/gconv/gconv-modules.cache
+rm /usr/lib64/gconv/gconv-modules.d
 rm /usr/lib64/gconv/IBM930.so
 rm /usr/lib64/gconv/IBM939.so
 rm /usr/lib64/gconv/JOHAB.so
 rm /usr/lib64/gconv/libGB.so
 rm /usr/lib64/gconv/libISOIR165.so
 rm /usr/lib64/gconv/libKSC.so
-rm /usr/lib64/gconv/SHIFT_JISX0213.so
-rm /usr/lib64/gconv/T.61.so
-rm /usr/lib64/gconv/TSCII.so
-rm /usr/lib64/gconv/UTF-7.so
 rm /usr/lib64/libperl.so*
-rm /usr/lib64/libpython3*
 rm /usr/sbin/applygnupgdefaults
 rm /usr/sbin/env-update
 rm /usr/sbin/etc-update
@@ -169,7 +153,6 @@ rm /usr/sbin/grpck
 rm /usr/sbin/grpunconv
 rm /usr/sbin/ldattach
 rm /usr/sbin/locale-gen
-rm /usr/sbin/pwconv
 rm /usr/sbin/pwunconv
 rm /usr/sbin/regenworld
 rm /usr/sbin/restore-tar

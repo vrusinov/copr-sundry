@@ -1,15 +1,16 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
+---
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
-    hooks:
-    -   id: trailing-whitespace
-        exclude: '\.patch$'
-    -   id: end-of-file-fixer
-        exclude: '\.patch$'
-    -   id: check-yaml
-    -   id: check-added-large-files
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v5.0.0
+  hooks:
+  -   id: trailing-whitespace
+      exclude: '\.patch$'
+  -   id: end-of-file-fixer
+      exclude: '\.patch$'
+  -   id: check-yaml
+  -   id: check-added-large-files
 -   repo: local
     hooks:
     # TODO: replace this with individual hooks
@@ -31,3 +32,7 @@ repos:
   rev: "0.14.0"
   hooks:
     - id: proselint
+- repo: https://github.com/adrienverge/yamllint.git
+  rev: v1.35.1
+  hooks:
+    - id: yamllint

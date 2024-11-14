@@ -4,8 +4,6 @@ alias rm='rm -r'
 
 set -e
 
-rm -f /sbin/getpcaps
-rm -f /sbin/hwclock
 rm -f /sbin/mkfs.minix
 rm -f /sbin/setcap
 rm -f /sbin/sfdisk
@@ -92,76 +90,26 @@ rm /etc/login.defs
 rm /etc/passwd-
 rm /lib64/libnss_compat.so.*
 rm /sbin/capsh
-rm /sbin/chcpu
-rm /sbin/ctrlaltdel
-rm /sbin/fsck
-rm /usr/bin/bison
-rm /usr/bin/bzcmp
-rm /usr/bin/dirmngr
-rm /usr/bin/g++*
-rm /usr/bin/gawk
 rm /usr/bin/gpgsm
 rm /usr/bin/ldconfig
-rm /usr/bin/localedef
 rm /usr/bin/mpicalc
-rm /usr/bin/msgattrib
 rm /usr/bin/openssl
-rm /usr/bin/pkgconf
-rm /usr/bin/pzstd
 rm /usr/bin/re2c
 rm /usr/bin/re2go
+rm /usr/bin/re2rust
 rm /usr/bin/rsync
-rm /usr/bin/setarch
-rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzdiff
-rm /usr/bin/xzegrep
-rm /usr/bin/zstd
-rm /usr/lib/python-exec/python3.*/2to3
-rm /usr/lib/python-exec/python3.*/archive-conf
-rm /usr/lib/python-exec/python3.*/dispatch-conf
-rm /usr/lib/python-exec/python3.*/ebuild
-rm /usr/lib/python-exec/python3.*/eclean
-rm /usr/lib/python-exec/python3.*/eclean-dist
-rm /usr/lib/python-exec/python3.*/egencache
-rm /usr/lib/python-exec/python3.*/ekeyword
-rm /usr/lib/python-exec/python3.*/emaint
-rm /usr/lib/python-exec/python3.*/emirrordist
-rm /usr/lib/python-exec/python3.*/enalyze
-rm /usr/lib/python-exec/python3.*/env-update
-rm /usr/lib/python-exec/python3.*/equery
-rm /usr/lib/python-exec/python3.*/eshowkw
-rm /usr/lib/python-exec/python3.*/fixpackages
-rm /usr/lib/python-exec/python3.*/glsa-check
-rm /usr/lib/python-exec/python3.*/quickpkg
-rm /usr/lib64/gconv/CP1258.so
-rm /usr/lib64/gconv/GBBIG5.so
-rm /usr/lib64/gconv/gconv-modules.cache
-rm /usr/lib64/gconv/gconv-modules.d
-rm /usr/lib64/gconv/IBM930.so
-rm /usr/lib64/gconv/IBM939.so
-rm /usr/lib64/gconv/JOHAB.so
-rm /usr/lib64/gconv/libGB.so
-rm /usr/lib64/gconv/libISOIR165.so
-rm /usr/lib64/gconv/libKSC.so
 rm /usr/lib64/libperl.so*
+rm /usr/lib64/libtcl*
 rm /usr/sbin/applygnupgdefaults
-rm /usr/sbin/env-update
 rm /usr/sbin/etc-update
-rm /usr/sbin/groupadd
-rm /usr/sbin/groupmod
 rm /usr/sbin/grpck
-rm /usr/sbin/grpunconv
 rm /usr/sbin/ldattach
-rm /usr/sbin/locale-gen
 rm /usr/sbin/pwunconv
 rm /usr/sbin/regenworld
-rm /usr/sbin/restore-tar
 rm /usr/sbin/rtcwake
-rm /usr/sbin/savelog
-rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/usermod
-rm /usr/share/libgpg-error
-rm /usr/share/polkit-1
+rm /usr/share/misc/
 
 # Remove this script:
 rm -f /bin/clean.sh

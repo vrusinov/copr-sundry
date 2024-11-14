@@ -2,37 +2,41 @@
 # See https://pre-commit.com/hooks.html for more hooks
 ---
 repos:
-- repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v5.0.0
-  hooks:
-  -   id: trailing-whitespace
-      exclude: '\.patch$'
-  -   id: end-of-file-fixer
-      exclude: '\.patch$'
-  -   id: check-yaml
-  -   id: check-added-large-files
--   repo: local
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
     hooks:
-    # TODO: replace this with individual hooks
-    -   id: local-pre-commit
-        name: run old pre-commit script
-        language: system
-        entry: hooks/pre-commit
-        files: ^.*$
--   repo: https://github.com/crate-ci/typos
-    rev: v1.26.0
+    -   id: trailing-whitespace
+        exclude: '\.patch$'
+    -   id: end-of-file-fixer
+        exclude: '\.patch$'
+    -   id: check-yaml
+    -   id: check-added-large-files
+  -   repo: local
+      hooks:
+      # TODO: replace this with individual hooks
+      -   id: local-pre-commit
+          name: run old pre-commit script
+          language: system
+          entry: hooks/pre-commit
+          files: ^.*$
+  -   repo: https://github.com/crate-ci/typos
+      rev: v1.26.0
+      hooks:
+        - id: typos
+  - repo: https://github.com/fsfe/reuse-tool
+    rev: "v4.0.3"
     hooks:
-      - id: typos
-- repo: https://github.com/fsfe/reuse-tool
-  rev: "v4.0.3"
-  hooks:
-    # TODO: switch to reuse-lint-file
-    - id: reuse
-- repo: https://github.com/amperser/proselint
-  rev: "0.14.0"
-  hooks:
-    - id: proselint
-- repo: https://github.com/adrienverge/yamllint.git
-  rev: v1.35.1
-  hooks:
-    - id: yamllint
+      # TODO: switch to reuse-lint-file
+      - id: reuse
+  - repo: https://github.com/amperser/proselint
+    rev: "0.14.0"
+    hooks:
+      - id: proselint
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+  - repo: https://github.com/markdownlint/markdownlint.git
+    rev: v0.13.0
+    hooks:
+      - id: markdownlint

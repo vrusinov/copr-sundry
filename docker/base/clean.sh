@@ -4,7 +4,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/gcc-ranlib
 rm -f /usr/bin/lessecho
 rm -f /usr/bin/newgrp
 rm -f /usr/bin/perldoc*
@@ -154,6 +153,7 @@ rm /usr/bin/easy_install
 rm /usr/bin/enc2xs-*-perl-*
 rm /usr/bin/g++*
 rm /usr/bin/gawk
+rm /usr/bin/gcc-ranlib
 rm /usr/bin/gpg
 rm /usr/bin/ldconfig
 rm /usr/bin/localedef

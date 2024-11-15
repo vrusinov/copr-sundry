@@ -1,8 +1,8 @@
 FROM vrusinov/base-build:2024-10-11 as build
 
-RUN emerge -v net-vpn/openvpn
+RUN emerge -v net-vpn/openvpn --color y
 # hadolint ignore=DL3059
-RUN emerge -v net-firewall/iptables
+RUN emerge -v net-firewall/iptables --color y
 
 FROM vrusinov/base:2024-10-11
 # OpenVPN

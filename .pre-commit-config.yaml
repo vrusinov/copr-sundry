@@ -5,12 +5,12 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
-    -   id: trailing-whitespace
+      - id: trailing-whitespace
         exclude: '\.patch$'
-    -   id: end-of-file-fixer
+      - id: end-of-file-fixer
         exclude: '\.patch$'
-    -   id: check-yaml
-    -   id: check-added-large-files
+      - id: check-yaml
+      - id: check-added-large-files
   -   repo: local
       hooks:
       # TODO: replace this with individual hooks
@@ -29,7 +29,7 @@ repos:
       # TODO: switch to reuse-lint-file
       - id: reuse
   - repo: https://github.com/amperser/proselint
-    rev: "0.14.0"
+    rev: "0.13.0"
     hooks:
       - id: proselint
   - repo: https://github.com/adrienverge/yamllint.git

@@ -4,7 +4,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/enc2xs-*-perl-*
 rm -f /usr/bin/gcc-ranlib
 rm -f /usr/bin/lessecho
 rm -f /usr/bin/newgrp
@@ -152,6 +151,7 @@ rm /usr/bin/cpack
 rm /usr/bin/ctest
 rm /usr/bin/dirmngr
 rm /usr/bin/easy_install
+rm /usr/bin/enc2xs-*-perl-*
 rm /usr/bin/g++*
 rm /usr/bin/gawk
 rm /usr/bin/gpg
@@ -166,6 +166,7 @@ rm /usr/bin/sqlite3
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzegrep
 rm /usr/bin/zstd
+rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libgcc.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libitm.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libstdc++.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libsupc++.a

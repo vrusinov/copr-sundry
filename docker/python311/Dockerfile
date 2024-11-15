@@ -1,9 +1,9 @@
 # SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
-FROM vrusinov/python3-build:3.11.5 as build
+FROM vrusinov/python3-build:3.11.9 as build
 
-FROM vrusinov/base:2023-10-19
+FROM vrusinov/base:2024-05-14
 
 COPY --from=build /etc/python-exec/python-exec.conf /etc/python-exec/
 COPY --from=build /usr/bin/python3.11 /usr/bin/python3.11

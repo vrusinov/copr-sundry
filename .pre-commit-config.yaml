@@ -11,14 +11,14 @@ repos:
         exclude: '\.patch$'
       - id: check-yaml
       - id: check-added-large-files
-  -   repo: local
-      hooks:
+  - repo: local
+    hooks:
       # TODO: replace this with individual hooks
-      -   id: local-pre-commit
-          name: run old pre-commit script
-          language: system
-          entry: hooks/pre-commit
-          files: ^.*$
+      - id: local-pre-commit
+        name: run old pre-commit script
+        language: system
+        entry: hooks/pre-commit
+        files: ^.*$
   -   repo: https://github.com/crate-ci/typos
       rev: v1.26.0
       hooks:
@@ -29,7 +29,7 @@ repos:
       # TODO: switch to reuse-lint-file
       - id: reuse
   - repo: https://github.com/amperser/proselint
-    rev: "0.13.0"
+    rev: "0.12.0"
     hooks:
       - id: proselint
   - repo: https://github.com/adrienverge/yamllint.git
@@ -40,3 +40,7 @@ repos:
     rev: v0.13.0
     hooks:
       - id: markdownlint
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.42.0
+    hooks:
+    - id: markdownlint

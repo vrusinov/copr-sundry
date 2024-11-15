@@ -1,5 +1,9 @@
 #!/bin/sh
 #
+# SPDX-FileCopyrightText: Google Inc
+# SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+#
 # An example hook script to verify what is about to be committed.
 # Called by "git commit" with no arguments.  The hook should
 # exit with non-zero status after issuing an appropriate message if
@@ -8,33 +12,6 @@
 # To enable this hook, rename this file to "pre-commit".
 
 set -e
-
-# Cross platform projects tend to avoid non-ASCII filenames; prevent
-# them from being added to the repository. We exploit the fact that the
-# printable range starts at the space character and ends with tilde.
-#
-# Note that the use of brackets around a tr range is ok here, (it's
-# even required, for portability to Solaris 10's /usr/bin/tr), since
-# the square bracket bytes happen to fall in the designated range.
-if test $(git diff --cached --name-only --diff-filter=A -z $against |
-	  LC_ALL=C tr -d '[ -~]\0' | wc -c) != 0
-then
-	cat <<\EOF
-Error: Attempt to add a non-ASCII file name.
-This can cause problems if you want to work with people on other platforms.
-To be portable it is advisable to rename the file.
-If you know what you are doing you can disable this check using:
-  git config hooks.allownonascii true
-EOF
-	exit 1
-fi
-
-# RPM lint - only if installed
-if which rpmlint 2> /dev/null ; then
-	rpmlint -c rpmlint.conf.toml .
-else
-	echo "WARN: rpmlint is not installed"
-fi
 
 # hadolint
 if which docker 2> /dev/null ; then

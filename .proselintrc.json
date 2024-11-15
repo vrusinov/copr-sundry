@@ -1,6 +1,6 @@
 {
     "checks": {
       "annotations.misc": false,
-      "typography.symbols.curly_quotes": false
+      "typography.symbols": false
     }
   }

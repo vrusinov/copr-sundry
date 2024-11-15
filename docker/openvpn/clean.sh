@@ -3,6 +3,7 @@
 alias rm='rm -r'
 set -e
 
+rm /usr/bin/ldconfig
 rm /usr/bin/re2rust
 rm /usr/lib/python*/
 rm /usr/lib64/binutils/

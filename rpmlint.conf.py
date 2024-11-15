@@ -54,7 +54,6 @@ addFilter('invalid-url')
 addFilter('third_party/submodules/')
 # Ignore all lint warnings in symlinks from submodules.
 addFilter('SPECS/cmake.spec')
-addFilter('cryptopp(-(progs|devel))?.x86_64')
 addFilter(r'grub2\.(x86_64|src|spec)')
 addFilter(r'grub2-(tools|debuginfo|efi|efi-modules)\.x86_64')
 addFilter('libev-devel.x86_64')

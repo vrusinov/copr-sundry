@@ -26,16 +26,14 @@ Please see text of the license in LICENSE file.
 
 ### Docker
 
-*   [OpenVPN](https://openvpn.net/) 2.6.4
-*   [SFTPGo](https://github.com/drakkan/sftpgo) 2.2.3
-*   [Tsunami Security Scanner](https://github.com/google/tsunami-security-scanner)
-    0.0.20
+* [OpenVPN](https://openvpn.net/) 2.6.4
+* [SFTPGo](https://github.com/drakkan/sftpgo) 2.2.3
+* [Tsunami Security Scanner](https://github.com/google/tsunami-security-scanner) 0.0.20
 
 ### RPMs
 
 * cargo2rpm 0.1.15
 * cmake 3.15.5
-* cryptopp 5.6.3
 * Cython 0.23
 * golang-googlecode-go-crypto / golang-golangorg-crypto 0-0.10.gitc10c31b
 * golang-googlecode-goauth2

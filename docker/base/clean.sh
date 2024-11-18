@@ -1,10 +1,13 @@
 #!/bin/sh
 
+# SPDX-FileCopyrightText: Google Inc
+# SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
 set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/lessecho
 rm -f /usr/bin/newgrp
 rm -f /usr/bin/perldoc*
 rm -f /usr/bin/pod2html
@@ -156,6 +159,7 @@ rm /usr/bin/gawk
 rm /usr/bin/gcc-ranlib
 rm /usr/bin/gpg
 rm /usr/bin/ldconfig
+rm /usr/bin/lessecho
 rm /usr/bin/localedef
 rm /usr/bin/msgattrib
 rm /usr/bin/openssl
@@ -229,6 +233,7 @@ rm /usr/lib64/gconv/VISCII.so
 rm /usr/lib64/libc.a
 rm /usr/lib64/libperl.so.*
 rm /usr/lib64/libpython3*
+rm /usr/lib64/libunistring.so*
 rm /usr/lib64/libunistring.so*
 rm /usr/lib64/tcl*
 rm /usr/sbin/addgnupghome

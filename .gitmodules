@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: Google Inc
+# SPDX-FileCopyrightText: 2025 Vladimir Rusinov
+# SPDX-License-Identifier: Apache-2.0
 [submodule "third_party/submodules/yum"]
 	path = third_party/submodules/yum
 	url = git://pkgs.fedoraproject.org/yum.git
@@ -16,9 +19,6 @@
 [submodule "third_party/submodules/deltarpm"]
 	path = third_party/submodules/deltarpm
 	url = git://pkgs.fedoraproject.org/deltarpm.git
-[submodule "third_party/submodules/os-prober"]
-	path = third_party/submodules/os-prober
-	url = https://src.fedoraproject.org/rpms/os-prober.git
 [submodule "third_party/submodules/perl-TermReadKey"]
 	path = third_party/submodules/perl-TermReadKey
 	url = git://pkgs.fedoraproject.org/perl-TermReadKey.git

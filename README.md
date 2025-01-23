@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: Google Inc
+SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Sundry package repository
 
 ## Synopsis
@@ -28,7 +34,8 @@ Please see text of the license in LICENSE file.
 
 * [OpenVPN](https://openvpn.net/) 2.6.4
 * [SFTPGo](https://github.com/drakkan/sftpgo) 2.2.3
-* [Tsunami Security Scanner](https://github.com/google/tsunami-security-scanner) 0.0.20
+* [Tsunami Security Scanner](https://github.com/google/tsunami-security-scanner)
+  0.0.20
 
 ### RPMs
 
@@ -140,7 +147,6 @@ Please see text of the license in LICENSE file.
 * python-psutil 4.2.0
 * python-pyasn1 0.1.9
 * python-pycparser 2.14
-* python2-pyrfc3339 1.0
 * python-rpmautospec 0.2.6
 * python-rpm-macros
 * python-simplejson 3.5.3

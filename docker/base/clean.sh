@@ -8,7 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/newgrp
 rm -f /usr/bin/perldoc*
 rm -f /usr/bin/pod2html
 rm -f /usr/bin/profile-config
@@ -159,9 +158,11 @@ rm /usr/bin/gawk
 rm /usr/bin/gcc-ranlib
 rm /usr/bin/gpg
 rm /usr/bin/ldconfig
+rm /usr/bin/ldconfig
 rm /usr/bin/lessecho
 rm /usr/bin/localedef
 rm /usr/bin/msgattrib
+rm /usr/bin/newgrp
 rm /usr/bin/openssl
 rm /usr/bin/pkgconf
 rm /usr/bin/pzstd

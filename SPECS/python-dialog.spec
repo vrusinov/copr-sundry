@@ -1,1 +1,0 @@
-../third_party/submodules/python-dialog/python-dialog.spec

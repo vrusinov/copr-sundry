@@ -132,7 +132,6 @@ Please see text of the license in LICENSE file.
 * python-configargparse 0.9.3
 * python-cryptography 1.3.1
 * python-cryptography-vectors 1.3.1
-* python-dialog 3.3.0
 * python-idna 2.0
 * python-ipaddress 1.0.16
 * python-iso8601 0.1.10

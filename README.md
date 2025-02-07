@@ -108,7 +108,6 @@ Please see text of the license in LICENSE file.
 * perl-GD 2.56
 * perl-generators 1.07
 * perl-GD-Barcode 1.15
-* perl-HTTP-Date 6.02
 * perl-HTML-Tagset 3.20
 * perl-inc-latest 0.500
 * perl-IO-Compress 2.069

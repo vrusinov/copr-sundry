@@ -8,8 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/perldoc*
-rm -f /usr/bin/pod2html
 rm -f /usr/bin/profile-config
 rm -f /usr/bin/pydoc*
 rm -f /usr/bin/qtbz2
@@ -50,7 +48,6 @@ rm -f /usr/sbin/addpart
 rm -f /usr/sbin/delpart
 rm -r /etc/udev
 rm -r /usr/lib/gcc/x86_64-pc-linux-gnu/*/plugin
-rm -r /usr/lib64/systemd
 rm -r /usr/share/doc
 rm -rf /bin/chown
 rm -rf /bin/chroot
@@ -116,7 +113,6 @@ rm /bin/kmod
 rm /bin/lsblk
 rm /bin/mountpoint
 rm /bin/stty
-rm /bin/systemd-tmpfiles
 rm /bin/tar
 rm /bin/tty
 rm /bin/vdir
@@ -129,16 +125,13 @@ rm /etc/rpc
 rm /etc/shadow-
 rm /etc/shells
 rm /lib/cpp
-rm /lib/udev/hwdb.d
 rm /lib64/libfdisk.so.*
 rm /sbin/blkzone
 rm /sbin/chcpu
 rm /sbin/ctrlaltdel
 rm /sbin/fsck
-rm /sbin/getpcaps
 rm /sbin/hwclock
 rm /sbin/mkfs.minix
-rm /sbin/setcap
 rm /sbin/sfdisk
 rm /sbin/sln
 rm /sbin/swapoff
@@ -151,20 +144,21 @@ rm /usr/bin/cmake
 rm /usr/bin/cpack
 rm /usr/bin/ctest
 rm /usr/bin/dirmngr
-rm /usr/bin/easy_install
 rm /usr/bin/enc2xs-*-perl-*
 rm /usr/bin/g++*
 rm /usr/bin/gawk
 rm /usr/bin/gcc-ranlib
+rm /usr/bin/git
 rm /usr/bin/gpg
-rm /usr/bin/ldconfig
 rm /usr/bin/ldconfig
 rm /usr/bin/lessecho
 rm /usr/bin/localedef
 rm /usr/bin/msgattrib
 rm /usr/bin/newgrp
 rm /usr/bin/openssl
+rm /usr/bin/perldoc*
 rm /usr/bin/pkgconf
+rm /usr/bin/pod2html
 rm /usr/bin/pzstd
 rm /usr/bin/setarch
 rm /usr/bin/sqlite3
@@ -179,16 +173,10 @@ rm /usr/lib/python-exec/python3.*/2to3
 rm /usr/lib/python-exec/python3.*/archive-conf
 rm /usr/lib/python-exec/python3.*/dispatch-conf
 rm /usr/lib/python-exec/python3.*/ebuild
-rm /usr/lib/python-exec/python3.*/eclean
-rm /usr/lib/python-exec/python3.*/eclean-dist
 rm /usr/lib/python-exec/python3.*/egencache
-rm /usr/lib/python-exec/python3.*/ekeyword
 rm /usr/lib/python-exec/python3.*/emaint
 rm /usr/lib/python-exec/python3.*/emirrordist
-rm /usr/lib/python-exec/python3.*/enalyze
 rm /usr/lib/python-exec/python3.*/env-update
-rm /usr/lib/python-exec/python3.*/equery
-rm /usr/lib/python-exec/python3.*/eshowkw
 rm /usr/lib/python-exec/python3.*/fixpackages
 rm /usr/lib/python-exec/python3.*/glsa-check
 rm /usr/lib/python-exec/python3.*/meson
@@ -198,8 +186,8 @@ rm /usr/lib/python-exec/python3.*/python-config
 rm /usr/lib/python-exec/python3.*/python3-config
 rm /usr/lib/python-exec/python3.*/quickpkg
 rm /usr/lib/python-exec/python3.*/regenworld
-rm /usr/lib/python-exec/python3.*/revdep-rebuild
 rm /usr/lib/python*
+rm /usr/lib64/binutils/x86_64-pc-linux-gnu/2.43/libiberty.a
 rm /usr/lib64/gconv/BIG5.so
 rm /usr/lib64/gconv/CP1258.so
 rm /usr/lib64/gconv/EUC-CN.so
@@ -232,9 +220,9 @@ rm /usr/lib64/gconv/TSCII.so
 rm /usr/lib64/gconv/UTF-7.so
 rm /usr/lib64/gconv/VISCII.so
 rm /usr/lib64/libc.a
+rm /usr/lib64/libcrypto.so.3
 rm /usr/lib64/libperl.so.*
 rm /usr/lib64/libpython3*
-rm /usr/lib64/libunistring.so*
 rm /usr/lib64/libunistring.so*
 rm /usr/lib64/tcl*
 rm /usr/sbin/addgnupghome

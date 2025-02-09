@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: Google Inc
+# SPDX-FileCopyrightText: 2024-2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
 FROM gentoo/portage:latest as portage
 
 FROM gentoo/stage3:amd64-nomultilib-systemd-mergedusr as gentoo
@@ -25,10 +29,6 @@ RUN etc-update --automode -5
 RUN emerge -v app-eselect/eselect-repository
 
 # hadolint ignore=DL3059
-RUN emerge --depclean
-# hadolint ignore=DL3059
-RUN emerge -v app-portage/gentoolkit
-# hadolint ignore=DL3059
-RUN revdep-rebuild
+RUN emerge --depclean --color y
 
 ENTRYPOINT ["/bin/bash"]

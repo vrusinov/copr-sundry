@@ -8,7 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/profile-config
 rm -f /usr/bin/pydoc*
 rm -f /usr/bin/qtbz2
 rm -f /usr/bin/revdep-rebuild*
@@ -149,6 +148,7 @@ rm /usr/bin/g++*
 rm /usr/bin/gawk
 rm /usr/bin/gcc-ranlib
 rm /usr/bin/git
+rm /usr/bin/git-receive-pack
 rm /usr/bin/gpg
 rm /usr/bin/ldconfig
 rm /usr/bin/lessecho
@@ -159,6 +159,7 @@ rm /usr/bin/openssl
 rm /usr/bin/perldoc*
 rm /usr/bin/pkgconf
 rm /usr/bin/pod2html
+rm /usr/bin/profile-config
 rm /usr/bin/pzstd
 rm /usr/bin/setarch
 rm /usr/bin/sqlite3
@@ -187,6 +188,7 @@ rm /usr/lib/python-exec/python3.*/python3-config
 rm /usr/lib/python-exec/python3.*/quickpkg
 rm /usr/lib/python-exec/python3.*/regenworld
 rm /usr/lib/python*
+rm /usr/lib64/binutils/x86_64-pc-linux-gnu/*/libbfd-*.gentoo-sys-devel-binutils-st.so
 rm /usr/lib64/binutils/x86_64-pc-linux-gnu/2.43/libiberty.a
 rm /usr/lib64/gconv/BIG5.so
 rm /usr/lib64/gconv/CP1258.so
@@ -219,6 +221,7 @@ rm /usr/lib64/gconv/T.61.so
 rm /usr/lib64/gconv/TSCII.so
 rm /usr/lib64/gconv/UTF-7.so
 rm /usr/lib64/gconv/VISCII.so
+rm /usr/lib64/glibc-*/libm-*.a
 rm /usr/lib64/libc.a
 rm /usr/lib64/libcrypto.so.3
 rm /usr/lib64/libperl.so.*

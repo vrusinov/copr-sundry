@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
-#
+# SPDX-FileCopyrightText: 2024-2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
 set -x
@@ -21,6 +20,6 @@ fi
 java -cp tsunami.jar:plugins/* -Dtsunami-config.location=tsunami.yaml \
   com.google.tsunami.main.cli.TsunamiCli \
   ${target_args} \
-  --scan-results-local-output-format=JSON --scan-results-local-output-filename=out
+  --scan-results-local-output-format=JSON --scan-results-local-output-filename=/tmp/out
 
-cat out
+cat /tmp/out

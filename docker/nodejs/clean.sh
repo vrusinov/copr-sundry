@@ -1,10 +1,13 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: Google Inc
+# SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
 alias rm='rm -r'
 
 set -e
 
-rm -f /sbin/mkfs.minix
 rm -f /sbin/setcap
 rm -f /sbin/sfdisk
 rm -f /sbin/sln
@@ -93,12 +96,13 @@ rm /sbin/capsh
 rm /usr/bin/gpgsm
 rm /usr/bin/ldconfig
 rm /usr/bin/mpicalc
-rm /usr/bin/openssl
 rm /usr/bin/re2c
 rm /usr/bin/re2go
 rm /usr/bin/re2rust
 rm /usr/bin/rsync
+rm /usr/bin/udevadm
 rm /usr/bin/xzdiff
+rm /usr/lib64/binutils/x86_64-pc-linux-gnu/*/libbfd-*.gentoo-sys-devel-binutils-st.so
 rm /usr/lib64/libperl.so*
 rm /usr/lib64/libtcl*
 rm /usr/sbin/applygnupgdefaults
@@ -109,7 +113,7 @@ rm /usr/sbin/pwunconv
 rm /usr/sbin/regenworld
 rm /usr/sbin/rtcwake
 rm /usr/sbin/usermod
-rm /usr/share/misc/
+rm -r /usr/share/misc/
 
 # Remove this script:
 rm -f /bin/clean.sh

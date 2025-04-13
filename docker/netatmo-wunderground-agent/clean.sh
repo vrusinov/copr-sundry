@@ -5,7 +5,6 @@
 
 alias rm='rm -r'
 
-rm -r /etc/python-exec
 rm -rf /usr/lib/go/api
 rm -rf /usr/lib64/node_modules/*/node_modules/*/man
 rm -rf /usr/lib64/node_modules/npm/node_modules/sshpk
@@ -25,15 +24,19 @@ rm /etc/csh.env
 rm /etc/host.conf
 rm /etc/mtab
 rm /etc/profile.d
+rm /etc/python-exec
 rm /lib/udev/
 rm /lib64/libBrokenLocale.so.*
 rm /lib64/libhistory.so.*
 rm /sbin/fsfreeze
 rm /usr/bin/gpgsm
+rm /usr/bin/gpgv
 rm /usr/bin/meson
 rm /usr/bin/rsync
 rm /usr/bin/udevadm
 rm /usr/bin/xzcmp
+rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libgcc.a
+rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libstdc++exp.a
 rm /usr/lib64/gconv/gconv-modules.cache
 rm /usr/lib64/gconv/gconv-modules.d
 rm /usr/lib64/gconv/ISO-2022-CN-EXT.so

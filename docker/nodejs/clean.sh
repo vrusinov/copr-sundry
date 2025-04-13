@@ -101,6 +101,7 @@ rm /usr/bin/re2go
 rm /usr/bin/re2rust
 rm /usr/bin/rsync
 rm /usr/bin/udevadm
+rm /usr/bin/udevadm
 rm /usr/bin/xzdiff
 rm /usr/lib64/binutils/x86_64-pc-linux-gnu/*/libbfd-*.gentoo-sys-devel-binutils-st.so
 rm /usr/lib64/libperl.so*
@@ -113,7 +114,7 @@ rm /usr/sbin/pwunconv
 rm /usr/sbin/regenworld
 rm /usr/sbin/rtcwake
 rm /usr/sbin/usermod
-rm -r /usr/share/misc/
+rm /usr/share/misc/
 
 # Remove this script:
 rm -f /bin/clean.sh

@@ -8,7 +8,6 @@ alias rm='rm -r'
 
 set -e
 
-rm -f /sbin/setcap
 rm -f /sbin/sfdisk
 rm -f /sbin/sln
 rm -f /sbin/swapoff
@@ -51,7 +50,6 @@ rm -rf /usr/lib64/libtasn1.so
 rm -rf /usr/lib64/locale
 rm -rf /usr/lib64/perl5
 rm -rf /usr/libexec/coreutils
-rm -rf /usr/libexec/gcc
 rm -rf /usr/libexec/gpg-check-pattern
 rm -rf /usr/libexec/gpg-protect-tool
 rm -rf /usr/libexec/pager
@@ -92,18 +90,17 @@ rm /etc/filesystems
 rm /etc/login.defs
 rm /etc/passwd-
 rm /lib64/libnss_compat.so.*
-rm /sbin/capsh
+rm /usr/bin/git-receive-pack
 rm /usr/bin/gpgsm
-rm /usr/bin/ldconfig
 rm /usr/bin/mpicalc
 rm /usr/bin/re2c
 rm /usr/bin/re2go
 rm /usr/bin/re2rust
 rm /usr/bin/rsync
-rm /usr/bin/udevadm
-rm /usr/bin/udevadm
+rm /usr/bin/scalar
 rm /usr/bin/xzdiff
 rm /usr/lib64/binutils/x86_64-pc-linux-gnu/*/libbfd-*.gentoo-sys-devel-binutils-st.so
+rm /usr/lib64/glibc-*/libm-*.a
 rm /usr/lib64/libperl.so*
 rm /usr/lib64/libtcl*
 rm /usr/sbin/applygnupgdefaults
@@ -114,7 +111,6 @@ rm /usr/sbin/pwunconv
 rm /usr/sbin/regenworld
 rm /usr/sbin/rtcwake
 rm /usr/sbin/usermod
-rm /usr/share/misc/
 
 # Remove this script:
 rm -f /bin/clean.sh

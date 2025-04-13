@@ -17,7 +17,10 @@ rm /opt/openjdk*/jmods/jdk.localedata.jmod
 rm /opt/openjdk*/legal
 rm /usr/bin/gpg
 rm /usr/lib64/binutils/
+rm /usr/lib64/gconv/EUC-CN.so
 rm /usr/lib64/gconv/IBM*.so
+rm /usr/lib64/gconv/VISCII.so
+rm /usr/lib64/glibc-*/libm-*.a
 rm /usr/lib64/tcl8.6
 rm /usr/share/cmake/
 rm /usr/share/gtk-doc/

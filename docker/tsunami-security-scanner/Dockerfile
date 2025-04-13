@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
 FROM vrusinov/java-build:11.0.18_p10 as build
 
 # Install nmap
@@ -49,9 +52,9 @@ RUN chmod +x build_all.sh && \
 
 # Compile the Tsunami scanner
 WORKDIR /tmp
-RUN wget --progress=dot:giga https://github.com/google/tsunami-security-scanner/archive/refs/tags/v0.0.20.tar.gz
-RUN tar xf v0.0.20.tar.gz
-WORKDIR /tmp/tsunami-security-scanner-0.0.20/
+RUN wget --progress=dot:giga https://github.com/google/tsunami-security-scanner/archive/refs/tags/v0.0.21.tar.gz
+RUN tar xf v0.0.21.tar.gz
+WORKDIR /tmp/tsunami-security-scanner-0.0.21/
 RUN ./gradlew shadowJar && \
     cp "$(find . -name 'tsunami-main-*-cli.jar')" /opt/tsunami/tsunami.jar && \
     cp ./tsunami.yaml /opt/tsunami/

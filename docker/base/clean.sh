@@ -246,6 +246,7 @@ rm /usr/sbin/restore-tar
 rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/useradd
 rm /usr/share/cmake
+rm /usr/share/misc/magic/
 
 # Remove this script:
 rm /usr/local

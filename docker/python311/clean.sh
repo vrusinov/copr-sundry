@@ -7,8 +7,9 @@ alias rm='rm -r'
 set -e
 
 rm /etc/ssl/misc
-rm /usr/bin/gpg
-rm /usr/bin/openssl
+rm /etc/systemd
+rm /usr/bin/ldconfig
+rm /usr/bin/re2go
 rm /usr/bin/re2rust
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libatomic.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libgcc.a

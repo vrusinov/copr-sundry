@@ -8,7 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/qtbz2
 rm -f /usr/bin/revdep-rebuild*
 rm -f /usr/bin/sprof
 rm -f /usr/bin/tload
@@ -162,11 +161,13 @@ rm /usr/bin/pod2html
 rm /usr/bin/profile-config
 rm /usr/bin/pydoc*
 rm /usr/bin/pzstd
+rm /usr/bin/qtbz2
 rm /usr/bin/setarch
 rm /usr/bin/sqlite3
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzegrep
 rm /usr/bin/zstd
+rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libatomic.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libgcc.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libitm.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libstdc++.a

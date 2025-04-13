@@ -8,7 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/pydoc*
 rm -f /usr/bin/qtbz2
 rm -f /usr/bin/revdep-rebuild*
 rm -f /usr/bin/sprof
@@ -120,6 +119,7 @@ rm /etc/locale.gen
 rm /etc/login.access
 rm /etc/os-release
 rm /etc/profile
+rm /etc/python-exec
 rm /etc/rpc
 rm /etc/shadow-
 rm /etc/shells
@@ -160,6 +160,7 @@ rm /usr/bin/perldoc*
 rm /usr/bin/pkgconf
 rm /usr/bin/pod2html
 rm /usr/bin/profile-config
+rm /usr/bin/pydoc*
 rm /usr/bin/pzstd
 rm /usr/bin/setarch
 rm /usr/bin/sqlite3

@@ -1,11 +1,11 @@
 #!/bin/sh
 
-# TODO: re-enable once rebuilt without readline
-#rm /lib64/libreadline.so.*
+# SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
 
 alias rm='rm -r'
 
-rm -rf /etc/python-exec
+rm -r /etc/python-exec
 rm -rf /usr/lib/go/api
 rm -rf /usr/lib64/node_modules/*/node_modules/*/man
 rm -rf /usr/lib64/node_modules/npm/node_modules/sshpk
@@ -32,8 +32,10 @@ rm /sbin/fsfreeze
 rm /usr/bin/gpgsm
 rm /usr/bin/meson
 rm /usr/bin/rsync
+rm /usr/bin/udevadm
 rm /usr/bin/xzcmp
 rm /usr/lib64/gconv/gconv-modules.cache
+rm /usr/lib64/gconv/gconv-modules.d
 rm /usr/lib64/gconv/ISO-2022-CN-EXT.so
 rm /usr/lib64/gconv/ISO-2022-CN.so
 rm /usr/lib64/gconv/ISO-2022-JP-3.so
@@ -51,6 +53,7 @@ rm /usr/sbin/perl-cleaner
 rm /usr/sbin/readprofile
 rm /usr/sbin/sysctl
 rm /usr/sbin/vigr
+rm /usr/share/gtk-doc
 rm /var/empty
 
 rm /bin/clean.sh

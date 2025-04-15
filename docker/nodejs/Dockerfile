@@ -4,7 +4,7 @@
 
 FROM vrusinov/nodejs-build:22.13.1 as build
 
-FROM vrusinov/base:2025-02-09
+FROM vrusinov/base:2025-02-14
 COPY --from=build /usr/bin/node /bin/node
 COPY --from=build /usr/lib64/libbrotli* /lib64/
 COPY --from=build /usr/lib64/libcares* /lib64/

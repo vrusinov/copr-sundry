@@ -3,7 +3,7 @@
 
 FROM vrusinov/python3-build:3.11.11 as build
 
-FROM vrusinov/base:2025-02-09
+FROM vrusinov/base:2025-02-14
 
 COPY --from=build /etc/python-exec/python-exec.conf /etc/python-exec/
 COPY --from=build /usr/bin/python3.11 /usr/bin/python3.11

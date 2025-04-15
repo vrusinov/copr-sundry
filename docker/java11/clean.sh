@@ -1,9 +1,13 @@
 #!/bin/sh
 
+# SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
 set -e
 
 alias rm='rm -r'
 
+rm /lib/systemd
 rm /opt/openjdk-bin-*/man
 rm /usr/lib/python*
 rm /usr/lib64/gconv/EUC-JISX0213.so

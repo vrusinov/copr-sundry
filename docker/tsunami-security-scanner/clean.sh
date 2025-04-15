@@ -8,6 +8,8 @@ set -e
 
 alias rm='rm -r'
 
+rm /lib/systemd
+rm /lib/udev
 rm /opt/openjdk*/bin/rmid
 rm /opt/openjdk*/bin/rmiregistry
 rm /opt/openjdk*/bin/serialver
@@ -16,6 +18,7 @@ rm /opt/openjdk*/jmods/java.desktop.jmod
 rm /opt/openjdk*/jmods/jdk.localedata.jmod
 rm /opt/openjdk*/legal
 rm /usr/bin/gpg
+rm /usr/bin/openssl
 rm /usr/lib64/binutils/
 rm /usr/lib64/gconv/EUC-CN.so
 rm /usr/lib64/gconv/IBM*.so

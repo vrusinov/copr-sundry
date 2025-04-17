@@ -13,10 +13,8 @@ n="python3"
 
 mkdir -p /tmp/docker-build
 
-docker build -t vrusinov/$n:$date_v -t vrusinov/$n:$v -t vrusinov/$n:$v.$date_v  -t vrusinov/$n:$v_short -t vrusinov/$n:latest .
+docker build -t vrusinov/$n:$v -t vrusinov/$n:$v.$date_v  -t vrusinov/$n:$v_short .
 docker run --rm -it vrusinov/$n:latest
-docker push vrusinov/$n:latest
-docker push vrusinov/$n:$date_v
 docker push vrusinov/$n:$v
 docker push vrusinov/$n:$v.$date_v
 docker push vrusinov/$n:$v_short

@@ -122,6 +122,7 @@ rm /etc/python-exec
 rm /etc/rpc
 rm /etc/shadow-
 rm /etc/shells
+rm /etc/ssl/misc
 rm /lib/cpp
 rm /lib64/libfdisk.so.*
 rm /sbin/blkzone

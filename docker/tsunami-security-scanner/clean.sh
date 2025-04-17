@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
-#
+# SPDX-FileCopyrightText: 2024-2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
 set -e
@@ -28,6 +27,9 @@ rm /usr/lib64/tcl8.6
 rm /usr/share/cmake/
 rm /usr/share/gtk-doc/
 rm /usr/share/misc/magic/
+rm /usr/share/zoneinfo/America/
+rm /usr/share/zoneinfo/Asia/
+rm /usr/share/zoneinfo/Europe/
 
 # Clean this script
 rm /usr/local/bin/clean.sh

@@ -62,11 +62,13 @@ RUN ./gradlew shadowJar && \
 
 FROM vrusinov/java:11.0.18_p10 as base
 
+COPY --from=build /lib64/libpcre.so.1 /lib64/
 COPY --from=build /opt/tsunami/ /opt/tsunami/
 COPY --from=build /usr/bin/ncrack /usr/bin/
 COPY --from=build /usr/bin/nmap /usr/bin/
-COPY --from=build /usr/lib64/liblinear.so* /usr/lib64/
-COPY --from=build /usr/lib64/libpcap* /usr/lib64/
+COPY --from=build /usr/lib64/liblinear.so* /lib64/
+COPY --from=build /usr/lib64/liblua5.4.so.0 /lib64/
+COPY --from=build /usr/lib64/libpcap* /lib64/
 COPY --from=build /usr/share/ncrack/ /usr/share/ncrack/
 COPY --from=build /usr/share/nmap/ /usr/share/nmap/
 COPY entrypoint.sh /bin/entrypoint.sh

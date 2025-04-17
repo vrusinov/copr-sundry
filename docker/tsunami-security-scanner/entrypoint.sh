@@ -7,6 +7,8 @@ set -x
 
 cd /opt/tsunami
 
+nmap --version || exit 1
+
 if [ -z "${IP_V4_TARGET}${IP_V6_TARGET}" ] ; then
   echo "No scan target specified."
   echo "Set IP_V4_TARGET or IP_V6_TARGET environment variable"
@@ -20,6 +22,6 @@ fi
 java -cp tsunami.jar:plugins/* -Dtsunami-config.location=tsunami.yaml \
   com.google.tsunami.main.cli.TsunamiCli \
   ${target_args} \
-  --scan-results-local-output-format=JSON --scan-results-local-output-filename=/tmp/out
+  --scan-results-local-output-format=JSON --scan-results-local-output-filename=/tmp/out || exit 1
 
 cat /tmp/out

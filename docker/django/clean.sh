@@ -1,11 +1,13 @@
 #!/bin/sh
+#
+# SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
 
 alias rm='rm -r'
 
 set -e
 
-rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libatomic.a
+rm /boot
+rm /usr/bin/git-upload-pack
+rm /usr/bin/gpgsm
 rm /usr/lib/python*/site-packages/setuptools
-rm /usr/lib64/gconv/GBBIG5.so
-rm /usr/lib64/gconv/libGB.so
-rm /usr/lib64/gconv/libISOIR165.so

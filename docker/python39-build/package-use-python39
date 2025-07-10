@@ -1,8 +1,7 @@
-# SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-FileCopyrightText: 2024-2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
 # Needs 3.10 or above:
->=dev-python/backports-tarfile-1.1.1 python_targets_python3_10
 >=dev-python/certifi-3021.3.16-r3 python_targets_python3_10
 >=dev-python/flit-core-3.9.0 python_targets_python3_10
 >=dev-python/hatch-vcs-0.4.0 python_targets_python3_10
@@ -21,11 +20,13 @@ app-portage/gemato python_targets_python3_10
 app-portage/gentoolkit python_targets_python3_10
 dev-build/meson python_targets_python3_10
 dev-build/meson-format-array python_targets_python3_10
+dev-python/backports-tarfile python_targets_python3_10
 dev-python/calver python_targets_python3_10
 dev-python/charset-normalizer python_targets_python3_10
 dev-python/cython python_targets_python3_10
 dev-python/editables python_targets_python3_10
 dev-python/gpep517 python_targets_python3_10
+dev-python/jaraco-collections python_targets_python3_10
 dev-python/jaraco-functools python_targets_python3_10
 dev-python/jaraco-text python_targets_python3_10
 dev-python/lxml python_targets_python3_10
@@ -37,6 +38,7 @@ dev-python/pathspec python_targets_python3_10
 dev-python/platformdirs python_targets_python3_10
 dev-python/pluggy python_targets_python3_10
 dev-python/pyparsing python_targets_python3_10
+dev-python/pysocks python_targets_python3_10
 dev-python/PySocks python_targets_python3_10
 dev-python/setuptools python_targets_python3_10
 dev-python/setuptools-scm python_targets_python3_10

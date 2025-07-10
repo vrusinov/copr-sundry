@@ -8,7 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/sprof
 rm -f /usr/bin/tload
 rm -f /usr/bin/unshare
 rm -f /usr/bin/whereis
@@ -148,6 +147,7 @@ rm /usr/bin/gawk
 rm /usr/bin/gcc-ranlib
 rm /usr/bin/git
 rm /usr/bin/git-receive-pack
+rm /usr/bin/git-shell
 rm /usr/bin/gpg
 rm /usr/bin/ldconfig
 rm /usr/bin/lessecho
@@ -164,6 +164,7 @@ rm /usr/bin/pzstd
 rm /usr/bin/qtbz2
 rm /usr/bin/revdep-rebuild*
 rm /usr/bin/setarch
+rm /usr/bin/sprof
 rm /usr/bin/sqlite3
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzegrep

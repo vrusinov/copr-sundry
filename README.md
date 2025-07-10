@@ -66,7 +66,6 @@ Please see text of the license in LICENSE file.
 * golang-github-gobwas-glob
 * golang-github-golang-appengine
 * golang-github-golang-groupcache
-* golang-github-golang-sys
 * golang-github-influxdb-influxdb
 * golang-github-jackpal-gateway
 * golang-github-jackpal-go-nat-pmp

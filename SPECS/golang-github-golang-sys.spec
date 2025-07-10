@@ -1,1 +1,0 @@
-../third_party/subtrees/golang-github-golang-sys/golang-github-golang-sys.spec

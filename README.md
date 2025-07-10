@@ -71,7 +71,6 @@ Please see text of the license in LICENSE file.
 * golang-github-jackpal-gateway
 * golang-github-jackpal-go-nat-pmp
 * golang-github-juju-ratelimit git772f5c3
-* golang-github-lib-pq git0dad96c
 * golang-github-odeke-em-extractor
 * golang-github-odeke-em-cache
 * golang-github-odeke-em-command

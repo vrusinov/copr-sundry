@@ -14,4 +14,4 @@ RUN emerge --depclean --color y
 # hadolint: disable=DL3059
 RUN etc-update --automode -5
 
-ENTRYPOINT ["/usr/bin/python3.9", "--version"]
+ENTRYPOINT ["/usr/bin/python3", "--version"]

@@ -115,7 +115,6 @@ Please see text of the license in LICENSE file.
 * perl-Params-Util 1.07
 * perl-Software-License 0.103010
 * perl-Sub-Exporter 0.987
-* perl-Sub-Install 0.928
 * perl-Module-Build 0.42.14
 * perl-Pod-Coverage 0.23
 * perl-TermReadKey 2.23

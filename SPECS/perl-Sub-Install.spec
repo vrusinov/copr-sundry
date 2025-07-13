@@ -1,1 +1,0 @@
-../third_party/submodules/perl-Sub-Install/perl-Sub-Install.spec

@@ -123,7 +123,6 @@ Please see text of the license in LICENSE file.
 * perl-threads 2.02
 * perl-Tk 804.033
 * perl-XML-Parser 2.44
-* pyOpenSSL 16.0.0
 * python-characteristic 14.3.0
 * python-configargparse 0.9.3
 * python-cryptography 1.3.1

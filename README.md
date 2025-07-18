@@ -135,7 +135,6 @@ Please see text of the license in LICENSE file.
 * python-keyring & python3-keyring 5.0
 * python-layered-yaml-attrdict-config 16.1.0
 * python-mock 1.0.1
-* python-ndg\_httpsclient 0.4.0
 * python-parsedatetime 1.5
 * python-psutil 4.2.0
 * python-pyasn1 0.1.9

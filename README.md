@@ -146,7 +146,6 @@ Please see text of the license in LICENSE file.
 * python-twisted 15.4.0
 * python-zbase32 1.1.5
 * python-zope-event 4.1.0
-* python-zope-component 4.2.2
 * pyutil 1.9.7
 * rubygem-fog-profitbricks 0.0.3
 * rubygem-pathspec 0.0.2

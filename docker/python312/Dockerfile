@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2024-2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
-FROM vrusinov/python3-build:3.12.8 as build
+FROM vrusinov/python3-build:3.12.8 AS build
 
 FROM vrusinov/base:2025-02-14
 

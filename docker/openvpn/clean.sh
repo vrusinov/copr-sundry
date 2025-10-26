@@ -6,19 +6,18 @@
 alias rm='rm -r'
 set -e
 
-rm /usr/bin/ldconfig
+rm /usr/bin/git-shell
+rm /usr/bin/git-upload-archive
 rm /usr/bin/re2c
 rm /usr/bin/re2go
 rm /usr/bin/re2rust
-rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libgcc.a
-rm /usr/lib/python*/
+rm /usr/bin/scalar
 rm /usr/lib/systemd
 rm /usr/lib64/binutils/
 rm /usr/lib64/gconv/
 rm /usr/lib64/glibc-*
 rm /usr/lib64/libgnutls.so*
 rm /usr/lib64/libtcl*
-rm /usr/lib64/libunistring.so*
 rm /usr/share/gtk-doc
 rm /usr/share/misc
 rm /usr/share/zoneinfo

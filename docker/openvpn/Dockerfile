@@ -1,16 +1,20 @@
-FROM vrusinov/base-build:2024-10-11 as build
+# SPDX-FileCopyrightText: 2024-2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+FROM vrusinov/base-build:2025-02-14 AS build
 
 RUN emerge -v net-vpn/openvpn --color y
 # hadolint ignore=DL3059
 RUN emerge -v net-firewall/iptables --color y
 
-FROM vrusinov/base:2024-10-11
+FROM vrusinov/base:2025-02-14
 # OpenVPN
 COPY --from=build /etc/group /etc/group
 COPY --from=build /etc/openvpn/down.sh /etc/openvpn/down.sh
 COPY --from=build /etc/openvpn/up.sh /etc/openvpn/up.sh
 COPY --from=build /etc/passwd /etc/passwd
 COPY --from=build /usr/lib64/libcap-ng* /lib64/
+COPY --from=build /usr/lib64/libcrypto.so* /lib64/
 COPY --from=build /usr/lib64/liblz4* /lib64/
 COPY --from=build /usr/lib64/liblzo2* /lib64/
 COPY --from=build /usr/sbin/openvpn /bin/openvpn

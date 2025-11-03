@@ -116,7 +116,6 @@ Please see text of the license in LICENSE file.
 * perl-Software-License 0.103010
 * perl-Sub-Exporter 0.987
 * perl-Module-Build 0.42.14
-* perl-Pod-Coverage 0.23
 * perl-TermReadKey 2.23
 * perl-Test-Pod 1.51
 * perl-Text-Template 1.46
@@ -158,7 +157,6 @@ Please see text of the license in LICENSE file.
 * rust-snapbox 0.2.10
 * rust-snapbox-macros 0.2.1
 * yum 3.4.3-508
-
 
 # NixOs
 

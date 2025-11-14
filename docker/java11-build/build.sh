@@ -1,10 +1,13 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
 set -e
 set -x
 
 date_v=$(date '+%Y-%m-%d')
-v="11.0.18_p10"
+v="11.0.22"
 major_v="11"
 n="java-build"
 

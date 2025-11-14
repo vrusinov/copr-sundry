@@ -8,7 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/unshare
 rm -f /usr/bin/whereis
 rm -f /usr/bin/x86_64-pc-linux-gnu-g++*
 rm -f /usr/bin/x86_64-pc-linux-gnu-objcopy
@@ -121,6 +120,7 @@ rm /etc/shadow-
 rm /etc/shells
 rm /etc/ssl/misc
 rm /lib/cpp
+rm /lib/systemd
 rm /lib64/libfdisk.so.*
 rm /sbin/blkzone
 rm /sbin/chcpu
@@ -167,6 +167,7 @@ rm /usr/bin/setarch
 rm /usr/bin/sprof
 rm /usr/bin/sqlite3
 rm /usr/bin/tload
+rm /usr/bin/unshare
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzegrep
 rm /usr/bin/zstd

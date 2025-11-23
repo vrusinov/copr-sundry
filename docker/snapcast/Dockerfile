@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
-FROM vrusinov/base-build:2025-02-14 as build
+FROM vrusinov/base-build:2025-02-14 AS build
 
 COPY snapcast.use /etc/portage/package.use/snapcast.use
 COPY make.conf /etc/portage/make.conf/01-snapcast.conf

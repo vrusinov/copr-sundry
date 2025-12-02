@@ -7,7 +7,7 @@ set -e
 set -x
 
 date_v=$(date '+%Y-%m-%d')
-v="11.0.22"
+v="11.0.24"
 major_v="11"
 n="java-build"
 

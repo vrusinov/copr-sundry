@@ -10,10 +10,11 @@ alias rm='rm -r'
 rm /lib/systemd
 rm /opt/openjdk-bin-*/man
 rm /usr/bin/gpg
+rm /usr/bin/openssl
 rm /usr/lib/python*
-rm /usr/lib64/gconv/CP1258.so
-rm /usr/lib64/gconv/gconv-modules.d
+rm /usr/lib64/tcl8.6
 rm /usr/share/gtk-doc/
+rm /usr/share/libtool
 
 # Remove this script:
 rm -rf /usr/local

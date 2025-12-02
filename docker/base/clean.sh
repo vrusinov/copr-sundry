@@ -8,7 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/whereis
 rm -f /usr/bin/x86_64-pc-linux-gnu-g++*
 rm -f /usr/bin/x86_64-pc-linux-gnu-objcopy
 rm -f /usr/bin/xmllint
@@ -168,6 +167,7 @@ rm /usr/bin/sprof
 rm /usr/bin/sqlite3
 rm /usr/bin/tload
 rm /usr/bin/unshare
+rm /usr/bin/whereis
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzegrep
 rm /usr/bin/zstd
@@ -234,6 +234,7 @@ rm /usr/lib64/libperl.so.*
 rm /usr/lib64/libpython3*
 rm /usr/lib64/libunistring.so*
 rm /usr/lib64/tcl*
+rm /usr/lib64/tcl8.6
 rm /usr/sbin/addgnupghome
 rm /usr/sbin/archive-conf
 rm /usr/sbin/chgpasswd

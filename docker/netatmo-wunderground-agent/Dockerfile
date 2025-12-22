@@ -1,19 +1,21 @@
 # SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
-FROM vrusinov/nodejs-build:22.4.1 as build
+FROM vrusinov/nodejs-build:22.13.1 AS build
 
 RUN USE="curl" emerge -v dev-vcs/git
 RUN mkdir /tmp/build
 WORKDIR /tmp/build
 RUN git clone https://github.com/brbeaird/netatmo-wunderground-agent
 WORKDIR /tmp/build/netatmo-wunderground-agent
+# TODO: remove after npm is added to the base nodejs image
+RUN USE="npm" emerge -v nodejs
 RUN npm install --verbose
 RUN mkdir -p /opt/netatmo-wunderground-agent/
 RUN cp server.js /opt/netatmo-wunderground-agent/
 RUN cp -r node_modules /opt/netatmo-wunderground-agent/
 
-FROM vrusinov/nodejs:22.4.1
+FROM vrusinov/nodejs:22.13.1
 COPY --from=build /usr/lib64/node_modules /usr/lib64/node_modules
 COPY --from=build /opt/netatmo-wunderground-agent/ /opt/netatmo-wunderground-agent/
 

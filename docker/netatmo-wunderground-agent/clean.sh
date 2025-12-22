@@ -3,6 +3,8 @@
 # SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
+set -e
+
 alias rm='rm -r'
 
 rm -rf /usr/lib/go/api
@@ -25,24 +27,14 @@ rm /etc/host.conf
 rm /etc/mtab
 rm /etc/profile.d
 rm /etc/python-exec
-rm /lib/udev/
 rm /lib64/libBrokenLocale.so.*
 rm /lib64/libhistory.so.*
 rm /sbin/fsfreeze
-rm /usr/bin/gpgsm
+rm /usr/bin/git-upload-pack
 rm /usr/bin/gpgv
 rm /usr/bin/meson
-rm /usr/bin/rsync
-rm /usr/bin/udevadm
 rm /usr/bin/xzcmp
-rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libgcc.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libstdc++exp.a
-rm /usr/lib64/gconv/gconv-modules.cache
-rm /usr/lib64/gconv/gconv-modules.d
-rm /usr/lib64/gconv/ISO-2022-CN-EXT.so
-rm /usr/lib64/gconv/ISO-2022-CN.so
-rm /usr/lib64/gconv/ISO-2022-JP-3.so
-rm /usr/lib64/gconv/ISO-2022-JP.so
 rm /usr/lib64/libb2.so.*
 rm /usr/lib64/libgnutls.so.*
 rm /usr/lib64/libnettle.so
@@ -57,7 +49,6 @@ rm /usr/sbin/readprofile
 rm /usr/sbin/sysctl
 rm /usr/sbin/vigr
 rm /usr/share/gtk-doc
-rm /var/empty
 
 rm /bin/clean.sh
 rm /bin/rm

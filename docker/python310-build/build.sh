@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-FileCopyrightText: 2024-2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
 set -e
 set -x
 
 date_v=$(date '+%Y-%m-%d')
-v=3.10.9
+v=3.10.12
 v_short=3.10
 n="python3-build"
 

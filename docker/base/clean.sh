@@ -8,7 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/x86_64-pc-linux-gnu-g++*
 rm -f /usr/bin/x86_64-pc-linux-gnu-objcopy
 rm -f /usr/bin/xmllint
 rm -f /usr/lib/gcc/x86_64-pc-linux-gnu/*/libquadmath.a
@@ -168,6 +167,7 @@ rm /usr/bin/sqlite3
 rm /usr/bin/tload
 rm /usr/bin/unshare
 rm /usr/bin/whereis
+rm /usr/bin/x86_64-pc-linux-gnu-g++*
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
 rm /usr/bin/xzegrep
 rm /usr/bin/zstd

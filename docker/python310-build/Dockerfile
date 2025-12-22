@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-FileCopyrightText: 2024-2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
-FROM vrusinov/base-build:2022-12-25 as build
+FROM vrusinov/base-build:2023-07-11 AS build
 
 COPY make.conf /etc/portage/make.conf/01-python.conf
 # hadolint: disable=DL3059
@@ -14,4 +14,3 @@ RUN emerge --depclean
 RUN etc-update --automode -5
 
 ENTRYPOINT ["/usr/bin/python3"]
-#ENTRYPOINT ["/bin/bash"]

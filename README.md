@@ -120,7 +120,6 @@ Please see text of the license in LICENSE file.
 * perl-Test-Pod 1.51
 * perl-Text-Template 1.46
 * perl-threads 2.02
-* perl-Tk 804.033
 * perl-XML-Parser 2.44
 * python-characteristic 14.3.0
 * python-configargparse 0.9.3

@@ -52,5 +52,10 @@ rm /usr/share/gtk-doc
 rm /usr/share/libtool
 rm /usr/share/misc
 rm /var/log/*
+rm /etc/conf.d
+rm /var/lib/dbus
+rm /var/lib/systemd
 
 rm /bin/clean.sh
+
+du -s * | sort -n

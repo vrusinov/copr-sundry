@@ -6,7 +6,6 @@
 alias rm='rm -r'
 set -e
 
-rm -f /sbin/setcap
 rm -f /sbin/sfdisk
 rm -f /sbin/sln
 rm -f /sbin/swapoff
@@ -105,6 +104,7 @@ rm /bin/gunzip
 rm /bin/mknod
 rm /bin/rmdir
 rm /bin/true
+rm /etc/csh.env
 rm /etc/filesystems
 rm /etc/inputrc
 rm /etc/login.defs
@@ -113,6 +113,7 @@ rm /etc/ssl/misc
 rm /lib64/libnss_compat.so.*
 rm /sbin/fsfreeze
 rm /sbin/mkfs.minix
+rm /sbin/setcap
 rm /usr/bin/git-receive-pack
 rm /usr/bin/mpicalc
 rm /usr/bin/scalar

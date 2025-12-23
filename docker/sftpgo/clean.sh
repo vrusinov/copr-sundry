@@ -14,6 +14,7 @@ rm /bin/sleep
 rm /bin/uname
 rm /etc/csh.env
 rm /etc/host.conf
+rm /etc/init.d
 rm /etc/mtab
 rm /etc/profile.d
 rm /etc/python-exec
@@ -50,5 +51,6 @@ rm /usr/sbin/vigr
 rm /usr/share/gtk-doc
 rm /usr/share/libtool
 rm /usr/share/misc
+rm /var/log/*
 
 rm /bin/clean.sh

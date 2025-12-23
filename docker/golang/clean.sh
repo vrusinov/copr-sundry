@@ -1,9 +1,11 @@
 #!/bin/sh
 
+# SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
 alias rm='rm -r'
 set -e
 
-rm -f /sbin/mkfs.minix
 rm -f /sbin/setcap
 rm -f /sbin/sfdisk
 rm -f /sbin/sln
@@ -110,6 +112,7 @@ rm /etc/passwd-
 rm /etc/ssl/misc
 rm /lib64/libnss_compat.so.*
 rm /sbin/fsfreeze
+rm /sbin/mkfs.minix
 rm /usr/bin/git-receive-pack
 rm /usr/bin/mpicalc
 rm /usr/bin/scalar
@@ -121,6 +124,7 @@ rm /usr/lib64/gconv/TCVN5712-1.so
 rm /usr/lib64/gconv/TIS-620.so
 rm /usr/lib64/gconv/UTF-32.so
 rm /usr/lib64/glibc-*
+rm /usr/libexec/editor
 rm /usr/sbin/applygnupgdefaults
 rm /usr/sbin/regenworld
 

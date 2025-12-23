@@ -17,6 +17,7 @@ rm /etc/host.conf
 rm /etc/mtab
 rm /etc/profile.d
 rm /etc/python-exec
+rm /etc/services
 rm /etc/systemd
 rm /lib64/libBrokenLocale.so.*
 rm /lib64/libhistory.so.*
@@ -34,6 +35,8 @@ rm /usr/lib64/libtasn1.so.*
 rm /usr/libexec/editor
 rm /usr/libexec/gpg-auth
 rm /usr/libexec/gpg-pair-tool
+rm /usr/libexec/gpg-preset-passphrase
+rm /usr/libexec/gpg-wks-client
 rm /usr/libexec/keyboxd
 rm /usr/libexec/scdaemon
 rm /usr/sbin/backup-tar
@@ -47,6 +50,5 @@ rm /usr/sbin/vigr
 rm /usr/share/gtk-doc
 rm /usr/share/libtool
 rm /usr/share/misc
-rm /var/empty
 
 rm /bin/clean.sh

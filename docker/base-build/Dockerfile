@@ -2,9 +2,9 @@
 # SPDX-FileCopyrightText: 2024-2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
-FROM gentoo/portage:latest as portage
+FROM gentoo/portage:latest AS portage
 
-FROM gentoo/stage3:amd64-nomultilib-systemd-mergedusr as gentoo
+FROM gentoo/stage3:amd64-nomultilib-systemd-mergedusr AS gentoo
 
 COPY --from=portage /var/db/repos/gentoo /var/db/repos/gentoo
 

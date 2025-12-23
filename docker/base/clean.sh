@@ -8,8 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/bin/x86_64-pc-linux-gnu-objcopy
-rm -f /usr/bin/xmllint
 rm -f /usr/lib/gcc/x86_64-pc-linux-gnu/*/libquadmath.a
 rm -f /usr/lib64/gconv/ANSI_X3.110.so
 rm -f /usr/lib64/gconv/CSN_369103.so
@@ -64,7 +62,6 @@ rm -rf /usr/lib/portage
 rm -rf /usr/lib/tmpfiles.d
 rm -rf /usr/lib64/binutils/*/*/include/
 rm -rf /usr/lib64/binutils/x86_64-pc-linux-gnu/*/ldscripts
-rm -rf /usr/lib64/cmake
 rm -rf /usr/lib64/gconv/BIG5HKSCS.so
 rm -rf /usr/lib64/gconv/CP932.so
 rm -rf /usr/lib64/gconv/IBM1390.so
@@ -134,9 +131,6 @@ rm /usr/bin/autoupdate-*
 rm /usr/bin/bison
 rm /usr/bin/bzcmp
 rm /usr/bin/bzmore
-rm /usr/bin/cmake
-rm /usr/bin/cpack
-rm /usr/bin/ctest
 rm /usr/bin/dirmngr
 rm /usr/bin/enc2xs-*-perl-*
 rm /usr/bin/g++*
@@ -146,6 +140,7 @@ rm /usr/bin/git
 rm /usr/bin/git-receive-pack
 rm /usr/bin/git-shell
 rm /usr/bin/gpg
+rm /usr/bin/gpg-reference
 rm /usr/bin/ldconfig
 rm /usr/bin/lessecho
 rm /usr/bin/localedef
@@ -159,8 +154,8 @@ rm /usr/bin/profile-config
 rm /usr/bin/pydoc*
 rm /usr/bin/pzstd
 rm /usr/bin/qtbz2
+rm /usr/bin/re2go
 rm /usr/bin/re2rust
-rm /usr/bin/revdep-rebuild*
 rm /usr/bin/setarch
 rm /usr/bin/sprof
 rm /usr/bin/sqlite3
@@ -169,6 +164,8 @@ rm /usr/bin/unshare
 rm /usr/bin/whereis
 rm /usr/bin/x86_64-pc-linux-gnu-g++*
 rm /usr/bin/x86_64-pc-linux-gnu-ld*
+rm /usr/bin/x86_64-pc-linux-gnu-objcopy
+rm /usr/bin/xmllint
 rm /usr/bin/xzegrep
 rm /usr/bin/zstd
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libatomic.a
@@ -176,7 +173,6 @@ rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libgcc.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libitm.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libstdc++.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libsupc++.a
-rm /usr/lib/python-exec/python3.*/2to3
 rm /usr/lib/python-exec/python3.*/archive-conf
 rm /usr/lib/python-exec/python3.*/dispatch-conf
 rm /usr/lib/python-exec/python3.*/ebuild
@@ -194,8 +190,8 @@ rm /usr/lib/python-exec/python3.*/python3-config
 rm /usr/lib/python-exec/python3.*/quickpkg
 rm /usr/lib/python-exec/python3.*/regenworld
 rm /usr/lib/python*
+rm /usr/lib64/binutils/*/*/*.a
 rm /usr/lib64/binutils/x86_64-pc-linux-gnu/*/libbfd-*.gentoo-sys-devel-binutils-st.so
-rm /usr/lib64/binutils/x86_64-pc-linux-gnu/2.43/libiberty.a
 rm /usr/lib64/gconv/BIG5.so
 rm /usr/lib64/gconv/CP1258.so
 rm /usr/lib64/gconv/EUC-CN.so
@@ -233,8 +229,6 @@ rm /usr/lib64/libcrypto.so.3
 rm /usr/lib64/libperl.so.*
 rm /usr/lib64/libpython3*
 rm /usr/lib64/libunistring.so*
-rm /usr/lib64/tcl*
-rm /usr/lib64/tcl8.6
 rm /usr/sbin/addgnupghome
 rm /usr/sbin/archive-conf
 rm /usr/sbin/chgpasswd
@@ -250,7 +244,6 @@ rm /usr/sbin/pwconv
 rm /usr/sbin/restore-tar
 rm /usr/sbin/update-ca-certificates
 rm /usr/sbin/useradd
-rm /usr/share/cmake
 rm /usr/share/misc/magic/
 
 # Remove this script:

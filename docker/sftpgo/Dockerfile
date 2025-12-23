@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2024 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
-FROM vrusinov/golang-build:1.22.3 as build
+FROM vrusinov/golang-build:1.22.6.2024-10-13 AS build
 
 COPY git.use /etc/portage/package.use/git
 
@@ -10,7 +10,7 @@ RUN mkdir /tmp/build && \
     cd /tmp/build && \
     git clone https://github.com/drakkan/sftpgo && \
     cd sftpgo && \
-    git checkout v2.2.3
+    git checkout v2.3.6
 WORKDIR /tmp/build/sftpgo
 RUN go build && \
     cp sftpgo /bin && \
@@ -19,7 +19,7 @@ RUN go build && \
     \
     useradd -rm -s /bin/sh sftpgo
 
-FROM vrusinov/golang:1.22.3
+FROM vrusinov/golang:1.22.6.2024-10-13
 COPY --from=build /bin/sftpgo /bin/sftpgo
 COPY --from=build /etc/passwd /etc/passwd
 COPY --from=build /usr/bin/git /usr/bin/git

@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
 set -e
 
 alias rm='rm -r'
@@ -14,10 +17,9 @@ rm /etc/host.conf
 rm /etc/mtab
 rm /etc/profile.d
 rm /etc/python-exec
-rm /etc/ssl/misc
+rm /etc/systemd
 rm /lib64/libBrokenLocale.so.*
 rm /lib64/libhistory.so.*
-rm /sbin/fsfreeze
 rm /usr/bin/go
 rm /usr/bin/meson
 rm /usr/bin/xzcmp
@@ -25,13 +27,13 @@ rm /usr/lib/go
 rm /usr/lib/systemd
 rm /usr/lib64/binutils/
 rm /usr/lib64/gconv
-rm /usr/lib64/glibc-*
 rm /usr/lib64/libb2.so.*
 rm /usr/lib64/libgnutls.so.*
 rm /usr/lib64/libnettle.so
 rm /usr/lib64/libtasn1.so.*
-rm /usr/lib64/tcl8.6
 rm /usr/libexec/editor
+rm /usr/libexec/gpg-auth
+rm /usr/libexec/gpg-pair-tool
 rm /usr/libexec/keyboxd
 rm /usr/libexec/scdaemon
 rm /usr/sbin/backup-tar

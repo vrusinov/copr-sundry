@@ -159,7 +159,3 @@ Please see text of the license in LICENSE file.
 # NixOs
 
 * simplediff 1.0
-
-## TODO / Future work
-
-* Make this unrelated to google repo.

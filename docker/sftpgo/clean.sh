@@ -12,6 +12,7 @@ rm /bin/dirname
 rm /bin/fuser
 rm /bin/sleep
 rm /bin/uname
+rm /etc/conf.d
 rm /etc/csh.env
 rm /etc/host.conf
 rm /etc/init.d
@@ -51,10 +52,9 @@ rm /usr/sbin/vigr
 rm /usr/share/gtk-doc
 rm /usr/share/libtool
 rm /usr/share/misc
-rm /var/log/*
-rm /etc/conf.d
 rm /var/lib/dbus
 rm /var/lib/systemd
+rm /var/log/*
 
 rm /bin/clean.sh
 

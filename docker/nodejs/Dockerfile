@@ -2,13 +2,14 @@
 # SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
-FROM vrusinov/nodejs-build:22.13.1 as build
+FROM vrusinov/nodejs-build:22.13.1 AS build
 
-FROM vrusinov/base:2025-02-14
+FROM vrusinov/base:2025-12-23
 COPY --from=build /usr/bin/node /bin/node
 COPY --from=build /usr/lib64/libbrotli* /lib64/
 COPY --from=build /usr/lib64/libcares* /lib64/
 COPY --from=build /usr/lib64/libcrypto* /lib64/
+COPY --from=build /usr/lib64/libnghttp2.so* /lib64/
 COPY --from=build /usr/lib64/libsimdjson* /lib64/
 COPY --from=build /usr/lib64/libuv* /lib64/
 

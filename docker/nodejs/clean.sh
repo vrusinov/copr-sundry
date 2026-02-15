@@ -8,7 +8,6 @@ alias rm='rm -r'
 
 set -e
 
-rm -f /sbin/sln
 rm -f /sbin/swapoff
 rm -f /usr/bin/gpg
 rm -f /usr/lib/gcc/x86_64-pc-linux-gnu/*/libstdc++.a*
@@ -26,7 +25,6 @@ rm -rf /etc/modprobe.d
 rm -rf /etc/portage
 rm -rf /etc/revdep-rebuild
 rm -rf /etc/runlevels
-rm -rf /etc/sandbox.d
 rm -rf /lib/gentoo
 rm -rf /usr/include
 rm -rf /usr/lib/go-bootstrap
@@ -88,18 +86,15 @@ rm /etc/filesystems
 rm /etc/login.defs
 rm /etc/passwd-
 rm /lib64/libnss_compat.so.*
-rm /usr/bin/git-shell
 rm /usr/bin/git-upload-archive
 rm /usr/bin/gpgsm
+rm /usr/bin/gpgv-reference
 rm /usr/bin/mpicalc
 rm /usr/bin/re2c
-rm /usr/bin/re2go
-rm /usr/bin/re2rust
 rm /usr/bin/rsync
 rm /usr/bin/scalar
 rm /usr/bin/xzdiff
 rm /usr/lib64/libperl.so*
-rm /usr/lib64/libtcl*
 rm /usr/sbin/applygnupgdefaults
 rm /usr/sbin/etc-update
 rm /usr/sbin/grpck

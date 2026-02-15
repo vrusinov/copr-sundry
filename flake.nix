@@ -17,24 +17,16 @@
       devShells = forAllSystems (system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
-          fhs = pkgs.buildFHSEnv {
-            name = "fhs-shell";
-            targetPkgs = pkgs: [
-              pkgs.git
-              pkgs.nodejs_24  # For pre-commit hooks
-              pkgs.ruby_3_4  # For pre-commit hooks
-            ];
-          };
         in
         {
-          default = fhs.env;
-          # default = pkgs.mkShell {
-          #   buildInputs = with pkgs; [
-          #     git
-          #     ruby
-          #     nodejs
-          #   ];
-          # };
+          default = pkgs.mkShell {
+            buildInputs = with pkgs; [
+              git
+              nodejs_24
+              ruby_3_4
+              pre-commit
+            ];
+          };
         });
     };
 }

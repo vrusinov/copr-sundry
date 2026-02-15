@@ -1,10 +1,13 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: 2024-2026 Vladimir Rusinov <vladimir.rusinov@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
 set -e
 set -x
 
 date_v=$(date '+%Y-%m-%d')
-v="17.0.10_p7"
+v="17.0.12_p7"
 n="java"
 
 docker build -t vrusinov/$n:latest -t vrusinov/$n:$date_v -t vrusinov/$n:$v -t vrusinov/$n:$v.$date_v .

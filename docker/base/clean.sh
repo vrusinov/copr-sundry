@@ -8,7 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/lib64/gconv/CSN_369103.so
 rm -f /usr/lib64/gconv/GB18030.so
 rm -f /usr/lib64/gconv/GBGBK.so
 rm -f /usr/lib64/gconv/GBK.so
@@ -184,11 +183,13 @@ rm /usr/lib/python-exec/python3.*/python3-config
 rm /usr/lib/python-exec/python3.*/quickpkg
 rm /usr/lib/python-exec/python3.*/regenworld
 rm /usr/lib/python*
+rm /usr/lib/systemd
 rm /usr/lib64/binutils/*/*/*.a
 rm /usr/lib64/binutils/x86_64-pc-linux-gnu/*/libbfd-*.gentoo-sys-devel-binutils-st.so
 rm /usr/lib64/gconv/ANSI_X3.110.so
 rm /usr/lib64/gconv/BIG5.so
 rm /usr/lib64/gconv/CP1258.so
+rm /usr/lib64/gconv/CSN_369103.so
 rm /usr/lib64/gconv/EUC-CN.so
 rm /usr/lib64/gconv/EUC-JISX0213.so
 rm /usr/lib64/gconv/EUC-JP-MS.so

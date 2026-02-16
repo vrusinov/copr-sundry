@@ -25,9 +25,15 @@ the software being built.
 
 When updating Docker images that depend on `vrusinov/base` or `vrusinov/base-build`:
 
-- Update the `FROM vrusinov/base*:YYYY-MM-DD` version to the new base image date
+- **DO NOT guess the base image date** - Query available versions using:
+  `docker pull vrusinov/base-build:latest && docker inspect \
+  --format='{{.RepoDigests}}' vrusinov/base-build:latest`
+  or check Docker Hub registry for available tags
+- Update the `FROM vrusinov/base*:YYYY-MM-DD` version to the new base image
+  date
 - Update related Dockerfile variants to keep them synchronized
-- Only update one base image version at a time - do not skip intermediate versions
-- The specific package versions (e.g., Python 3.10, 3.11, 3.12) come from what's
-  available in the base image's Portage
+- Only update one base image version at a time - do not skip intermediate
+  versions
+- The specific package versions (e.g., Python 3.10, 3.11, 3.12) come from
+  what's available in the base image's Portage
 - Keep all related image variants synchronized to the same base image date

@@ -8,7 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/lib/gcc/x86_64-pc-linux-gnu/*/libquadmath.a
 rm -f /usr/lib64/gconv/ANSI_X3.110.so
 rm -f /usr/lib64/gconv/CSN_369103.so
 rm -f /usr/lib64/gconv/GB18030.so
@@ -171,6 +170,7 @@ rm /usr/bin/zstd
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libatomic.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libgcc.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libitm.a
+rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libquadmath.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libstdc++.a
 rm /usr/lib/gcc/x86_64-pc-linux-gnu/*/libsupc++.a
 rm /usr/lib/python-exec/python3.*/archive-conf

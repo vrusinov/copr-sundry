@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2024-2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
-FROM vrusinov/base-build:2023-10-19 AS build
+FROM vrusinov/base-build:2024-05-14 AS build
 
 COPY make.conf /etc/portage/make.conf/01-python.conf
 # hadolint: disable=DL3059

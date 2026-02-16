@@ -1,1 +1,0 @@
-../third_party/subtrees/golang-googlecode-go-crypto/golang-googlecode-go-crypto.spec

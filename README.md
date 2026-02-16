@@ -42,7 +42,6 @@ Please see text of the license in LICENSE file.
 * cargo2rpm 0.1.15
 * cmake 3.15.5
 * Cython 0.23
-* golang-googlecode-go-crypto / golang-golangorg-crypto 0-0.10.gitc10c31b
 * golang-googlecode-goauth2
 * golang-googlecode-gogoprotobuf
 * golang-googlecode-goprotobuf

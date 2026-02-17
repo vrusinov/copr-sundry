@@ -1,11 +1,11 @@
 # SPDX-FileCopyrightText: 2025 Vladimir Rusinov <vladimir.rusinov@gmail.com>
 # SPDX-License-Identifier: Apache-2.0
 
-FROM vrusinov/java-build:11.0.24 AS build
+FROM vrusinov/java-build:11.0.25_p9 AS build
 
-FROM vrusinov/base:2024-10-11
+FROM vrusinov/base:2025-02-09
 COPY --from=build /etc/java-config-2/ /etc/java-config-2/
-COPY --from=build /opt/openjdk-bin-11.0.24_p8/ /opt/openjdk-bin-11.0.24_p8/
+COPY --from=build /opt/openjdk-bin-11.0.25_p9/ /opt/openjdk-bin-11.0.25_p9/
 COPY --from=build /usr/bin/java /usr/bin/
 COPY --from=build /usr/lib/jvm/ /usr/lib/jvm/
 COPY --from=build /usr/libexec/eselect-java/ /usr/libexec/eselect-java/

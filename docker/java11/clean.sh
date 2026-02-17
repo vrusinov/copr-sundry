@@ -10,9 +10,10 @@ alias rm='rm -r'
 rm /etc/systemd
 rm /lib/systemd
 rm /opt/openjdk-bin-*/man
+rm /usr/bin/git-receive-pack
 rm /usr/bin/re2rust
-rm /usr/lib/python*
-rm /usr/lib64/binutils/*/*/*.a
+rm /usr/bin/scalar
+rm /usr/lib64/glibc-*
 rm /usr/share/gtk-doc/
 rm /usr/share/libtool
 

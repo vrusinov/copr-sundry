@@ -8,7 +8,6 @@ set -e
 
 alias rm='rm -r'
 
-rm -f /usr/lib64/gconv/GB18030.so
 rm -f /usr/lib64/gconv/GBGBK.so
 rm -f /usr/lib64/gconv/GBK.so
 rm -f /usr/lib64/gconv/IBM1130.so
@@ -153,6 +152,7 @@ rm /usr/bin/pzstd
 rm /usr/bin/qtbz2
 rm /usr/bin/re2go
 rm /usr/bin/re2rust
+rm /usr/bin/scalar
 rm /usr/bin/setarch
 rm /usr/bin/sprof
 rm /usr/bin/sqlite3
@@ -194,6 +194,7 @@ rm /usr/lib64/gconv/EUC-CN.so
 rm /usr/lib64/gconv/EUC-JISX0213.so
 rm /usr/lib64/gconv/EUC-JP-MS.so
 rm /usr/lib64/gconv/EUC-TW.so
+rm /usr/lib64/gconv/GB18030.so
 rm /usr/lib64/gconv/GBBIG5.so
 rm /usr/lib64/gconv/gconv-modules.cache
 rm /usr/lib64/gconv/gconv-modules.d

@@ -91,7 +91,6 @@ Please see text of the license in LICENSE file.
 * grub2
 * lafs-backup-tool
 * libarchive
-* libsolv
 * perl-Business-ISBN
 * perl-Business-ISBN-Data
 * perl-Canary-Stability

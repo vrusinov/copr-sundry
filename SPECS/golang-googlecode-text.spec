@@ -1,1 +1,0 @@
-../third_party/subtrees/golang-googlecode-text/golang-googlecode-text.spec

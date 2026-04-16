@@ -46,7 +46,6 @@ Please see text of the license in LICENSE file.
 * golang-googlecode-goprotobuf
 * golang-googlecode-google-api-client
 * golang-googlecode-net
-* golang-googlecode-text
 * golang-gopkg-check
 * golang-github-AudriusButkevicius-go-nat-pmp
 * golang-github-gobwas-glob

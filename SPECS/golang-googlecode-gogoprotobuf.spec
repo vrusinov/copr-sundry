@@ -1,1 +1,0 @@
-../third_party/subtrees/golang-googlecode-gogoprotobuf/golang-googlecode-gogoprotobuf.spec

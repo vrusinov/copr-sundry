@@ -43,7 +43,6 @@ Please see text of the license in LICENSE file.
 * cmake 3.15.5
 * Cython 0.23
 * golang-googlecode-goauth2
-* golang-googlecode-gogoprotobuf
 * golang-googlecode-goprotobuf
 * golang-googlecode-google-api-client
 * golang-googlecode-net

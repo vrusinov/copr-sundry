@@ -44,7 +44,6 @@ Please see text of the license in LICENSE file.
 * Cython 0.23
 * golang-googlecode-goauth2
 * golang-googlecode-goprotobuf
-* golang-googlecode-google-api-client
 * golang-googlecode-net
 * golang-gopkg-check
 * golang-github-AudriusButkevicius-go-nat-pmp

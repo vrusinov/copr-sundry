@@ -83,7 +83,6 @@ Please see text of the license in LICENSE file.
 * golang-github-stathat-go
 * golang-github-syndtr-goleveldb
 * golang-github-syndtr-gosnappy / golang-github-golang-snappy
-* golang-github-thejerf-suture
 * golang-githib-vitrun-qart
 * grub2
 * lafs-backup-tool

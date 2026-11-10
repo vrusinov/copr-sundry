@@ -112,7 +112,6 @@ Please see text of the license in LICENSE file.
 * perl-Module-Build 0.42.14
 * perl-TermReadKey 2.23
 * perl-Test-Pod 1.51
-* perl-Text-Template 1.46
 * perl-threads 2.02
 * perl-XML-Parser 2.44
 * python-characteristic 14.3.0
